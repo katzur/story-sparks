@@ -6,7 +6,6 @@ body {
     background-color: #FED9B7 !important;
     background-size: cover;
     height: calc(100vh - 164px);
-    color: #555;
     font-family: 'Fira Mono';
 }
 
@@ -50,6 +49,15 @@ body {
 
 .border-black {
     border: 1px solid black !important;
+}
+
+.display-4 {
+    font-size: revert!important;
+}
+
+.h4, h4 {
+    font-size: larger!important;
+    font-weight: bold;
 }
 
 /* -------------------------------- Media Queries */
