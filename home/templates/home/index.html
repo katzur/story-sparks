@@ -2,26 +2,29 @@
 {% load static %}
 
 {% block page_header %}
-    <div class="container header-container">
-        <div class="row">
-            <div class="col"></div>
-        </div>
+<div class="container header-container">
+    <div class="row">
+        <div class="col"></div>
     </div>
+</div>
 {% endblock %}
 
 {% block content %}
-    <div class="container h-100">
-        <div class="row h-100">
-            <div class="col-7 col-md-6 my-auto">
-                <h1 class="display-4 logo-font text-black">
-                    Scented <span class="fw-bold">stories</span> of your life. <br>Written on the <span class="fw-bold">candles</span>... for fun!
-                </h1>
-                <div class="my-5">
-                    <h4>
-                        <a href="" class="shop-now-button btn btn-lg rounded-0 text-uppercase py-3">Check the store</a>
-                    </h4>
-                </div>
-            </div>
+<div class="container h-100">
+    <div class="row h-100">
+        <div class="col-12 col-lg-5 order-lg-first mt-2 mb-4 py-4">
+            <h1 class="display-4">Scented candles with stories of your life buring strong!</h1>
+            <p class="my-4">Why so serious? Life can be dull and boring at times, so we want to make it more LIT!<br>
+                Those are OUR everyday stories - let's put some light on them. Light a candle and enjoy the scents of
+                21st century lifestyle.</p>
+            <p class="my-4"><a href="" class="btn btn-outline-dark rounded-0 py-2 theme-btn">Check the store</a></p>
+        </div>
+        <div class="col-12 col-lg-7 order-first">
+            <img class="img-fluid" src="{% static 'candles-hero.png' %}" alt="Story Sparks Co." width="800"
+                height="500">
         </div>
     </div>
+</div>
+
+
 {% endblock %}
