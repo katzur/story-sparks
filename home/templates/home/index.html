@@ -15,12 +15,8 @@
         <!-- Empty header for spacing -->
     </div>
 </div>
-<div class="container pt-5">
-    <div class="row">
-        <!-- Empty header for spacing -->
-    </div>
-</div>
 <div class="container mb-7">
+    <!-- Hero section -->
     <div class="row">
         <div class="col-12 col-lg-5 order-lg-first mt-2 mb-4 py-4">
             <h1 class="display-4">Scented candles with stories of your life buring strong!</h1>
@@ -35,4 +31,136 @@
         </div>
     </div>
 </div>
+
+<div class="row">
+    <!-- Products tiles -->
+    <!-- First -->
+    <div class="col-12 col-md-4 text-center pt-5 px-auto" style="background: #fcbe6c;">
+        <h2>Our Candles</h2>
+        <a href="" class="btn btn-outline-dark rounded-0 py-2 m-3 theme-btn">Shop Now</a>
+        <div class="home-product">
+            <img width="60%" class="d-none d-lg-inline" src="media/basic.png" alt="Basic Candle">
+            <img width="50%" class="d-lg-none" src="media/basic.png" alt="Basic Candle">
+        </div>
+    </div>
+    <!-- Second -->
+    <div class="col-12 col-md-4 text-center pt-5 px-auto" style="background: #F07167;">
+        <h2>Scents</h2>
+        <a href="" class="btn btn-outline-dark rounded-0 py-2 m-3 theme-btn">Shop Now</a>
+        <div class="home-product">
+            <img width="60%" class="d-none d-lg-inline" src="media/coffee-break.png" alt="Coffee break candle">
+            <img width="50%" class="d-lg-none" src="media/coffee-break.png" alt="Coffee break candle">
+        </div>
+    </div>
+    <!-- Third -->
+    <div class="col-12 col-md-4 text-center pt-5 px-auto" style="background: #f2a094;">
+        <h2>Special Offers</h2>
+        <a href="" class="btn btn-outline-dark rounded-0 py-2 m-3 theme-btn">Shop Now</a>
+        <div class="home-product">
+            <img width="60%" class="d-none d-lg-inline" src="media/self-care.png" alt="Self care candle">
+            <img width="50%" class="d-lg-none" src="media/self-care.png" alt="Self care candle">
+        </div>
+    </div>
+</div>
+
+<!-- Testimonials section from https://www.tutorialrepublic.com/codelab.php?topic=bootstrap&file=testimonial-carousel-with-quote-icon -->
+<!-- Carousel wrapper -->
+<div class="container-xl">
+	<div class="row">
+		<div class="col-sm-12">
+			<h2>What <b>our customers</b> are saying</h2>
+			<div id="myCarousel" class="carousel slide" data-ride="carousel">
+				<!-- Carousel indicators -->
+				<ol class="carousel-indicators">
+					<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+					<li data-target="#myCarousel" data-slide-to="1"></li>
+					<li data-target="#myCarousel" data-slide-to="2"></li>
+				</ol>   
+				<!-- Wrapper for carousel items -->
+				<div class="carousel-inner">
+					<div class="carousel-item active">
+						<div class="row">
+							<div class="col-sm-6">
+								<div class="media">
+									<img src="media/vogue.png" class="mr-3" alt="Vogue Logo">
+									<div class="media-body">
+										<div class="testimonial">
+											<p>Hand poured candles with a lot to say! They fill the romm with fragnance, and start a real conversation!</p>
+											<p class="overview"><b>Vogue Europe</b></p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-sm-6">
+								<div class="media">
+									<img src="media/rte.png" class="mr-3" alt="RTE TV Logo">
+									<div class="media-body">
+										<div class="testimonial">
+											<p>These funny candles smell amazing but also have the wittiest labels that reflect contemporary mass culture.</p>
+											<p class="overview"><b>RTE Television</b></p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>			
+					</div>
+					<div class="carousel-item">
+						<div class="row">
+							<div class="col-sm-6">
+								<div class="media">
+									<img src="media/forbes.png" class="mr-3" alt="Forbes Logo">
+									<div class="media-body">
+										<div class="testimonial">
+											<p>Irresistable descriptions, which reflect modern lifestyle. Great business idea!</p>
+											<p class="overview"><b>Forbes</b></p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-sm-6">
+								<div class="media">
+									<img src="media/todayfm.png" class="mr-3" alt="TodayFM Logo">
+									<div class="media-body">
+										<div class="testimonial">
+											<p>Story Sparks candles only prove that staying at home and lighting up a nice candle can be more fun than going out with you friends.</p>
+											<p class="overview"><b>Today FM Radio</b></p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>			
+					</div>
+					<div class="carousel-item">
+						<div class="row">
+							<div class="col-sm-6">
+								<div class="media">
+									<img src="media/homeandlifestyle.png" class="mr-3" alt="Home and Lifestyle Magazine Logo">
+									<div class="media-body">
+										<div class="testimonial">
+											<p>Candle Sparks products are a modern take on poetry!</p>
+											<p class="overview"><b>Home and Lifestyle Magazine</b></p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-sm-6">
+								<div class="media">
+									<img src="media/elle.png" class="mr-3" alt="Elle Magazine Logo">
+									<div class="media-body">
+										<div class="testimonial">
+											<p>Candle Sparks candles are a BRILLIANT gift idea for all Millenials! Scents combos are absolutely amazing.</p>
+											<p class="overview"><b>ELLE Magazine</b></p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>			
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- End testimonials -->
+
 {% endblock %}
