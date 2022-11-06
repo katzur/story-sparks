@@ -99,6 +99,20 @@ hr {
 	background: transparent !important;
 }
 
+/* -------------------------------- Back to the top button styling */
+
+.btt-button {
+    height: 42px;
+    width: 42px;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+}
+
+.btt-link {
+    cursor: pointer;
+}
+
 /* -------------------------------- Carousel styling from https://www.tutorialrepublic.com/codelab.php?topic=bootstrap&file=testimonial-carousel-with-quote-icon*/
 
 h2 {
