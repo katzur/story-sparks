@@ -66,6 +66,34 @@ body {
     margin-left: 0px!important;
 }
 
+.overlay {
+	height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
+	position: fixed;
+	z-index: -1;
+}
+
+hr {
+    border-top: none!important;
+}
+
+/* -------------------------------- Product card styling */
+
+.card-body {
+	text-align: center;
+}
+
+.card-footer {
+	text-align: center;
+	background-color: transparent!important;
+}
+
+.card {
+	background: transparent!important;
+}
+
 /* -------------------------------- Carousel styling from https://www.tutorialrepublic.com/codelab.php?topic=bootstrap&file=testimonial-carousel-with-quote-icon*/
 
 h2 {
