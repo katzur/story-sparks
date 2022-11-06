@@ -12,8 +12,8 @@
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="all-products-link">
                 <a href="{% url 'products' %}" class="dropdown-item">All Products</a>
-                <a href="" class="dropdown-item">Candle Jars</a>
-                <a href="" class="dropdown-item">Candle Tins</a>
+                <a href="{% url 'products' %}?category=Jar" class="dropdown-item">Candle Jar</a>
+                <a href="{% url 'products' %}?category=Tin" class="dropdown-item">Candle Tin</a>
             </div>
         </li>
 
@@ -23,11 +23,11 @@
                 Scents
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="scents-link">
-                <a href="" class="dropdown-item">Sweet and fruity</a>
-                <a href="" class="dropdown-item">Warm and deep</a>
-                <a href="" class="dropdown-item">Floral</a>
-                <a href="" class="dropdown-item">Fresh</a>
-                <a href="" class="dropdown-item">Autumn spices</a>
+                <a href="{% url 'products' %}?scent=Sweet" class="dropdown-item">Sweet and fruity</a>
+                <a href="{% url 'products' %}?scent=Warm" class="dropdown-item">Warm and deep</a>
+                <a href="{% url 'products' %}?scent=Floral" class="dropdown-item">Floral</a>
+                <a href="{% url 'products' %}?scent=Fresh" class="dropdown-item">Fresh</a>
+                <a href="{% url 'products' %}?scent=Spices" class="dropdown-item">Autumn spices</a>
             </div>
         </li>
 
