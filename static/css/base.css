@@ -119,6 +119,15 @@ hr {
     cursor: pointer;
 }
 
+/* -------------------------------- Bag elements */
+.table td, .table th {
+    vertical-align: baseline!important;
+}
+
+.text-info {
+    color: #e87362!important
+}
+
 /* -------------------------------- Carousel styling from https://www.tutorialrepublic.com/codelab.php?topic=bootstrap&file=testimonial-carousel-with-quote-icon*/
 
 h2 {
