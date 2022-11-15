@@ -13,7 +13,7 @@
 <div class="overlay"></div>
 <div class="container-fluid">
     <div class="row">
-        <div class="col text-center mt-3" style="background: #fcbe6c;">
+        <div class="col text-center mt-3">
             <h2 class="logo-font" style="text-transform: revert; font-size: xx-large;">All Products</h2>
             {% for c in current_categories %}
             <a class="category-badge text-decoration-none" href="{% url 'products' %}?category={{ c.name }}">
@@ -59,7 +59,7 @@
                         {% if product.image %}
                         <a href="{% url 'product_detail' product.id %}">
                             <img class="card-img-top img-fluid" src="{{ product.image.url }}" alt="{{ product.name }}"
-                                style="background: repeating-linear-gradient(45deg, #fcbe6c, #fcbe6c 10px, #f2a094 10px, #f2a094 20px); border-radius: 50%;">
+                                style="background: repeating-linear-gradient(45deg, #f4ceb5, #f4ceb5 10px, #f5dec9 10px, #f5dec9 20px); border-radius: 50%;">
                         </a>
                         {% else %}
                         <a href="{% url 'product_detail' product.id %}">
@@ -78,7 +78,7 @@
                             </div>
                         </div>
                         {% if request.user.is_superuser %}
-                        <small class="ml-3">
+                        <small class="ml-3" style="text-align-last: center;">
                             <a href="{% url 'edit_product' product.id %}">Edit</a> | 
                             <a class="text-danger" href="{% url 'delete_product' product.id %}">Delete</a>
                         </small>

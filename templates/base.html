@@ -54,7 +54,7 @@
             <div class="container-fluid alert-container">
                 <div class="row">
                     <div class="col-12 d-none d-sm-block">
-                        <h4 class="logo-font my-1" style="text-align: center;">
+                        <h4 class="logo-font my-1" style="text-align: center; background-color: #f4ceb5; box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;">
                             Free delivery on orders over €{{ free_delivery_threshold }}!</h4>
                     </div>
                 </div>
@@ -62,7 +62,7 @@
 
             <div class="col-12 col-lg-4 my-auto py-1 py-lg-0 text-center text-lg-left">
                 <a href="{% url 'home' %}" class="nav-link main-logo-link">
-                    <img class="img-fluid" src="media/logo.png" alt="Story Sparks Logo" width="40%">
+                    <h2 class=" my-0"><strong>STORY SPARKS</strong> Co.</h2>
                 </a>
             </div>
             <div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
@@ -107,12 +107,12 @@
                         <a class="{% if grand_total %}text-info font-weight-bold{% else %}text-black{% endif %} nav-link"
                             href="{% url 'view_bag' %}">
                             <div class="text-center">
-                                <div><i class="fas fa-shopping-bag fa-lg"></i></div>
+                                <div><i class="fas fa-shopping-cart fa-lg"></i></div>
                                 <p class="my-0">
                                     {% if grand_total %}
-                                    ${{ grand_total|floatformat:2 }}
+                                    €{{ grand_total|floatformat:2 }}
                                     {% else %}
-                                    $0.00
+                                    €0.00
                                     {% endif %}
                                 </p>
                             </div>
