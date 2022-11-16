@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+
+{% block extra_title %} - 500{% endblock %}
+
+{% block page_header %}
+    <div class="container pt-5">
+        <div class="row">
+            <div class="col">
+                <!-- Page header -->
+                <h1 class="display-5 fw-bold pb-3">
+                    500 - Server error
+                </h1>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block content %}
+    <div class="container pt-4">
+        <div class="row">
+            <div class="col-sm-12 col-lg-6">
+                <p>Whooops! Looks like the page was set on fire!</p>
+                <a href="{% url 'home' %}" class="btn btn-primary rounded-0 py-2 theme-btn">Return to the homepage</a>
+            </div>
+        </div>
+    </div>
+{% endblock %}
