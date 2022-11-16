@@ -86,6 +86,16 @@ hr {
 	background-color: transparent !important;
 }
 
+/* -------------------------------- Tiles on the homepae hover effect fromhttps://www.joshwcomeau.com/animation/css-transitions/ */
+
+.tiles {
+	transition: transform 250ms;
+}
+
+.tiles:hover {
+    transform: translateY(-10px);
+}
+
 /* -------------------------------- Navbar hover effect from https://codepen.io/maheshambure21/pen/QwXaRw */
 div ul li a,
 div ul li a:after,
