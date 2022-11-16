@@ -39,8 +39,8 @@
         <h2>Our Candles</h2>
         <a href="{% url 'products' %}" class="btn btn-outline-dark rounded-0 py-2 m-3 theme-btn">Shop Now</a>
         <div class="home-product">
-            <img width="60%" class="d-none d-lg-inline" src="media/basic.png" alt="Basic Candle">
-            <img width="50%" class="d-lg-none" src="media/basic.png" alt="Basic Candle">
+            <img width="60%" class="d-none d-lg-inline" src="{{ MEDIA_URL }}basic.png" alt="Basic Candle">
+            <img width="50%" class="d-lg-none" src="{{ MEDIA_URL }}basic.png" alt="Basic Candle">
         </div>
     </div>
     <!-- Second -->
@@ -48,8 +48,8 @@
         <h2>Scents</h2>
         <a href="" class="btn btn-outline-dark rounded-0 py-2 m-3 theme-btn">Shop Now</a>
         <div class="home-product">
-            <img width="60%" class="d-none d-lg-inline" src="media/coffee-break.png" alt="Coffee break candle">
-            <img width="50%" class="d-lg-none" src="media/coffee-break.png" alt="Coffee break candle">
+            <img width="60%" class="d-none d-lg-inline" src="{{ MEDIA_URL }}coffee-break.png" alt="Coffee break candle">
+            <img width="50%" class="d-lg-none" src="{{ MEDIA_URL }}coffee-break.png" alt="Coffee break candle">
         </div>
     </div>
     <!-- Third -->
@@ -57,8 +57,8 @@
         <h2>Special Offers</h2>
         <a href="" class="btn btn-outline-dark rounded-0 py-2 m-3 theme-btn">Shop Now</a>
         <div class="home-product">
-            <img width="60%" class="d-none d-lg-inline" src="media/hot-mess.png" alt="Hot mess candle">
-            <img width="50%" class="d-lg-none" src="media/hot-mess.png" alt="Hot mess candle">
+            <img width="60%" class="d-none d-lg-inline" src="{{ MEDIA_URL }}hot-mess.png" alt="Hot mess candle">
+            <img width="50%" class="d-lg-none" src="{{ MEDIA_URL }}hot-mess.png" alt="Hot mess candle">
         </div>
     </div>
 </div>
@@ -82,7 +82,7 @@
                         <div class="row">
                             <div class="col-sm-6">
                                 <div class="media">
-                                    <img src="media/vogue.png" class="mr-3" alt="Vogue Logo">
+                                    <img src="{{ MEDIA_URL }}vogue.png" class="mr-3" alt="Vogue Logo">
                                     <div class="media-body">
                                         <div class="testimonial">
                                             <p>Hand poured candles with a lot to say! They fill the romm with fragnance,
@@ -94,7 +94,7 @@
                             </div>
                             <div class="col-sm-6">
                                 <div class="media">
-                                    <img src="media/rte.png" class="mr-3" alt="RTE TV Logo">
+                                    <img src="{{ MEDIA_URL }}rte.png" class="mr-3" alt="RTE TV Logo">
                                     <div class="media-body">
                                         <div class="testimonial">
                                             <p>These funny candles smell amazing but also have the wittiest labels that
@@ -110,7 +110,7 @@
                         <div class="row">
                             <div class="col-sm-6">
                                 <div class="media">
-                                    <img src="media/forbes.png" class="mr-3" alt="Forbes Logo">
+                                    <img src="{{ MEDIA_URL }}forbes.png" class="mr-3" alt="Forbes Logo">
                                     <div class="media-body">
                                         <div class="testimonial">
                                             <p>Irresistable descriptions, which reflect modern lifestyle. Great business
@@ -122,7 +122,7 @@
                             </div>
                             <div class="col-sm-6">
                                 <div class="media">
-                                    <img src="media/todayfm.png" class="mr-3" alt="TodayFM Logo">
+                                    <img src="{{ MEDIA_URL }}todayfm.png" class="mr-3" alt="TodayFM Logo">
                                     <div class="media-body">
                                         <div class="testimonial">
                                             <p>Those candles only prove that staying at home and lighting up a
@@ -138,7 +138,7 @@
                         <div class="row">
                             <div class="col-sm-6">
                                 <div class="media">
-                                    <img src="media/homeandlifestyle.png" class="mr-3"
+                                    <img src="{{ MEDIA_URL }}homeandlifestyle.png" class="mr-3"
                                         alt="Home and Lifestyle Magazine Logo">
                                     <div class="media-body">
                                         <div class="testimonial">
@@ -150,7 +150,7 @@
                             </div>
                             <div class="col-sm-6">
                                 <div class="media">
-                                    <img src="media/elle.png" class="mr-3" alt="Elle Magazine Logo">
+                                    <img src="{{ MEDIA_URL }}elle.png" class="mr-3" alt="Elle Magazine Logo">
                                     <div class="media-body">
                                         <div class="testimonial">
                                             <p>Candle Sparks candles are a BRILLIANT gift idea for all Millenials!
@@ -180,7 +180,7 @@
         <p class="my-4"><a href="" class="btn btn-outline-dark rounded-0 py-2 theme-btn mt-2">Learn more about us</a></p>
     </div>
     <div class="col-12 col-md-6 order-first d-flex justify-content-center">
-        <img src="media/tins-collage.png" alt="Tins candles collage" class="img-fluid"
+        <img src="{{ MEDIA_URL }}tins-collage.png" alt="Tins candles collage" class="img-fluid"
             width="70%">
     </div>
 </div>
