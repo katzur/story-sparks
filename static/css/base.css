@@ -86,6 +86,24 @@ hr {
 	background-color: transparent !important;
 }
 
+/* -------------------------------- Effect-shine for Instagram reference from https://www.graphicpie.com/css-text-hover-effects/*/
+
+a.effect-shine:hover {
+	-webkit-mask-image: linear-gradient(-75deg, rgba(0, 0, 0, .6) 30%, #000 50%, rgba(0, 0, 0, .6) 70%);
+	-webkit-mask-size: 200%;
+	animation: shine 2s infinite;
+}
+
+@-webkit-keyframes shine {
+	from {
+		-webkit-mask-position: 150%;
+	}
+
+	to {
+		-webkit-mask-position: -50%;
+	}
+}
+
 /* -------------------------------- Tiles on the homepae hover effect fromhttps://www.joshwcomeau.com/animation/css-transitions/ */
 
 .tiles {
@@ -93,7 +111,7 @@ hr {
 }
 
 .tiles:hover {
-    transform: translateY(-10px);
+	transform: translateY(-10px);
 }
 
 /* -------------------------------- Navbar hover effect from https://codepen.io/maheshambure21/pen/QwXaRw */
@@ -448,38 +466,39 @@ h2::after {
 	}
 
 	.display-4.logo-font.text-black {
-        font-size: 2rem;
-    }
+		font-size: 2rem;
+	}
 
-    .nav-link {
-        padding: 0.15rem;
-    }
+	.nav-link {
+		padding: 0.15rem;
+	}
 
-    .nav-link i.fa-lg {
-        font-size: 1rem;
-    }
+	.nav-link i.fa-lg {
+		font-size: 1rem;
+	}
 
-    .navbar-toggler {
-        padding: .6rem .6rem;
-        font-size: 1rem;
-    }
+	.navbar-toggler {
+		padding: .6rem .6rem;
+		font-size: 1rem;
+	}
 
-    #delivery-banner h4 {
-        font-size: .9rem;
-    }
+	#delivery-banner h4 {
+		font-size: .9rem;
+	}
 
-    .btn.btn-outline-black.rounded-0,
-    .btn.btn-black.rounded-0 {
-        padding: .375rem .375rem;
-    }
+	.btn.btn-outline-black.rounded-0,
+	.btn.btn-black.rounded-0 {
+		padding: .375rem .375rem;
+	}
 
-    .btn.btn-outline-black.rounded-0.btn-lg,
-    .btn.btn-black.rounded-0.btn-lg {
-        padding: .375rem .375rem;
-        font-size: .75rem;
-    }
+	.btn.btn-outline-black.rounded-0.btn-lg,
+	.btn.btn-black.rounded-0.btn-lg {
+		padding: .375rem .375rem;
+		font-size: .75rem;
+	}
 
-    .increment-qty, .decrement-qty {
-        padding: .25rem .5rem !important;
-    }
+	.increment-qty,
+	.decrement-qty {
+		padding: .25rem .5rem !important;
+	}
 }

@@ -19,14 +19,14 @@
     <!-- Hero section -->
     <div class="row">
         <div class="col-12 col-lg-5 order-lg-first mt-2 mb-4 py-4">
-            <h1 class="display-4">Scented candles with the stories of your life buring strong!</h1>
-            <p class="my-4">Why so serious? Life can be dull and boring at times, so we want to make it more LIT!<br>
-                Those are OUR everyday stories - let's put some light on them. Light a candle and enjoy the scents of
-                21st century lifestyle.</p>
+            <h1 class="display-4">Scented <strong>candles</strong> with the <strong>stories</strong> of your life buring strong!</h1>
+            <p class="my-4">Why so serious? Life can be dull and boring at times, so we want to make it more <strong>LIT!</strong><br>
+                Those are <strong>OUR</strong> everyday stories with a spark of humour - let's put some light on them.<br>
+                Light a candle and enjoy the scents of 21st century lifestyle.</p>
             <p class="my-4"><a href="{% url 'products' %}" class="btn btn-outline-dark rounded-0 py-2 theme-btn">Check the store</a></p>
         </div>
         <div class="col-12 col-lg-7 order-first">
-            <img class="img-fluid" src="{{ MEDIA_URL }}hero-image.png" alt="Story Sparks Co." width="85%"
+            <img class="img-fluid" src="{{ MEDIA_URL }}hero-image.png" alt="Story Sparks Jar Candles Hero Image" width="85%"
                 height="500">
         </div>
     </div>
@@ -39,17 +39,17 @@
         <h2>Our Candles</h2>
         <a href="{% url 'products' %}" class="btn btn-outline-dark rounded-0 py-2 m-3 theme-btn">Shop Now</a>
         <div class="home-product">
-            <img width="60%" class="d-none d-lg-inline" src="{{ MEDIA_URL }}basic.png" alt="Basic Candle">
-            <img width="50%" class="d-lg-none" src="{{ MEDIA_URL }}basic.png" alt="Basic Candle">
+            <img width="60%" class="d-none d-lg-inline" src="{{ MEDIA_URL }}basic.png" alt="Basic Candle jar">
+            <img width="50%" class="d-lg-none" src="{{ MEDIA_URL }}basic.png" alt="Basic Candle jar">
         </div>
     </div>
     <!-- Second -->
     <div class="col-12 col-md-4 text-center pt-5 px-auto tiles" style="background: #f4ceb5;">
         <h2>Scents</h2>
-        <a href="" class="btn btn-outline-dark rounded-0 py-2 m-3 theme-btn">Shop Now</a>
+        <a href="{% url 'products' %}?scent=Warm" class="btn btn-outline-dark rounded-0 py-2 m-3 theme-btn">Shop Now</a>
         <div class="home-product">
-            <img width="60%" class="d-none d-lg-inline" src="{{ MEDIA_URL }}coffee-break.png" alt="Coffee break candle">
-            <img width="50%" class="d-lg-none" src="{{ MEDIA_URL }}coffee-break.png" alt="Coffee break candle">
+            <img width="60%" class="d-none d-lg-inline" src="{{ MEDIA_URL }}coffee-break.png" alt="Coffee break candle jar">
+            <img width="50%" class="d-lg-none" src="{{ MEDIA_URL }}coffee-break.png" alt="Coffee break candle jar">
         </div>
     </div>
     <!-- Third -->
@@ -57,8 +57,8 @@
         <h2>Special Offers</h2>
         <a href="" class="btn btn-outline-dark rounded-0 py-2 m-3 theme-btn">Shop Now</a>
         <div class="home-product">
-            <img width="60%" class="d-none d-lg-inline" src="{{ MEDIA_URL }}hot-mess.png" alt="Hot mess candle">
-            <img width="50%" class="d-lg-none" src="{{ MEDIA_URL }}hot-mess.png" alt="Hot mess candle">
+            <img width="60%" class="d-none d-lg-inline" src="{{ MEDIA_URL }}hot-mess.png" alt="Hot mess candle jar">
+            <img width="50%" class="d-lg-none" src="{{ MEDIA_URL }}hot-mess.png" alt="Hot mess candle jar">
         </div>
     </div>
 </div>
@@ -172,10 +172,10 @@
 <!-- More about product/ us reference -->
 <div class="row align-items-center py-7" style="background: #f5dec9; box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;">
     <div class="col-12 col-md-6 p-5 order-lg-first">
-        <h2 class="display-5">Designing stories with a spark</h2>
+        <h2 class="display-5">Designing <strong>stories</strong> with a <strong>spark</strong></h2>
         <p class="my-4">Every candle we make is an invitation to revisit some memories.</p>
-        <p class="my-4">We take the inspiration from everyday tales we share or experience. Witty comments on our
-            reality meet with carefully selected scents to give you one of a kind HOT candle. Enjoy!
+        <p class="my-4">We take the inspiration from everyday tales or experiences we share. Silly comments on our
+            reality meet with carefully selected scents to give you one of a kind <strong>HOT</strong> candle. Enjoy!
         </p>
         <p class="my-4"><a href="" class="btn btn-outline-dark rounded-0 py-2 theme-btn mt-2">Learn more about us</a></p>
     </div>
@@ -189,10 +189,8 @@
 <div class="col text-center py-7 pt-5 pb-3" style="background: #ead1a0; text-align: center; box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 90px;">
     <p style="font-weight: bold; font-size: xx-large;">@storysparksco</p>
     <p><a href="https://www.instagram.com/storysparksco" rel="external nofollow noopener" target="_blank"
-            class="h4" style="color: #212529;">FOLLOW US ON INSTAGRAM</a></p>
+            class="h4 effect-shine" style="color: #212529;">FOLLOW US ON INSTAGRAM</a></p>
 </div>
-
-
 
 
 {% endblock %}
