@@ -431,6 +431,24 @@ h2::after {
 	border-radius: 0;
 }
 
+/* -------------------------------- Mailchimp subscription form */
+#mc_embed_signup .helper_text {
+	background-color: transparent!important;
+}
+
+#mc_embed_signup form {
+	margin: 0px!important;
+}
+
+#mc-embedded-subscribe {
+	margin: 0px!important;
+}
+
+#mc_embed_signup #mc-embedded-subscribe-form div.mce_inline_error {
+	background-color: transparent!important;
+}
+
+
 /* -------------------------------- Media Queries */
 
 /* Slightly larger container on xl screens */
