@@ -8,4 +8,4 @@ def handler404(request, exception):
 
 def handler500(request, *args, **argv):
     """[Handler for internal server error generic message 500]"""
-    return render(request, "500.html", status=500)
+    return render(request, "errors/500.html", status=500)
