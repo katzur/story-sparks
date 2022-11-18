@@ -86,6 +86,14 @@ hr {
 	background-color: white!important;
 }
 
+.social-icons {
+	color: black;
+}
+
+.social-icons:hover {
+	color: #edede4;
+}
+
 /* -------------------------------- Effect-shine for Instagram reference from https://www.graphicpie.com/css-text-hover-effects/*/
 
 a.effect-shine:hover {
