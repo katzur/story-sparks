@@ -1,5 +1,6 @@
 from django.shortcuts import render, redirect, reverse
 from django.contrib import messages
+from django.conf import settings
 from .forms import ContactForm
 
 
@@ -9,7 +10,7 @@ def contact(request):
     messages.
     """
     if request.method == 'POST':
-        form = ContactForm(request.POST, request.FILES)
+        form = ContactForm(request.POST)
         if form.is_valid():
             form.save()
             messages.success(request, 'You successfuly contacted us!')
@@ -21,9 +22,6 @@ def contact(request):
 
     template = 'contact/contact.html/'
 
-    context = {
-        'form': form,
-        'bag_details_not_required': True
-    }
+    context = {'form': form}
 
     return render(request, template, context)

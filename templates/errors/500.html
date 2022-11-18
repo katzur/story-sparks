@@ -7,7 +7,7 @@
         <div class="row">
             <div class="col">
                 <!-- Page header -->
-                <h1 class="display-5 fw-bold pb-3">
+                <h1 class="display-5 fw-bold pb-3 text-center">
                     500 - Server error
                 </h1>
             </div>
@@ -18,9 +18,9 @@
 {% block content %}
     <div class="container pt-4">
         <div class="row">
-            <div class="col-sm-12 col-lg-6">
+            <div class="col-sm-12 col-lg-10 text-center">
                 <p>Whooops! Looks like the page was set on fire!</p>
-                <a href="{% url 'home' %}" class="btn btn-primary rounded-0 py-2 theme-btn">Return to the homepage</a>
+                <a href="{% url 'home' %}" class="btn btn-black rounded-0 py-2 theme-btn">Return to the homepage</a>
             </div>
         </div>
     </div>
