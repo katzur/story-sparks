@@ -16,12 +16,15 @@ def contact(request):
             messages.success(request, 'You successfuly contacted us!')
             return redirect(reverse('contact'))
         else:
-            messages.error(request, 'Failed to send your message. Make sure the form is valid.')
+            messages.error(request, 'Failed to send your message. Try again!')
     else:
         form = ContactForm()
 
     template = 'contact/contact.html/'
 
-    context = {'form': form}
+    context = {
+        'form': form,
+        'on_profile_page': True
+    }
 
     return render(request, template, context)

@@ -11,7 +11,7 @@
                     <a href="" class="nav-link ps-0  text-dark text-uppercase">About Us</a>
                 </li>
                 <li class="nav-item">
-                    <a href="" class="nav-link ps-0 text-dark text-uppercase">Contact</a>
+                    <a href="{% url 'contact' %}" class="nav-link ps-0 text-dark text-uppercase">Contact</a>
                 </li>
                 <li class="nav-item">
                     <a href="https://www.privacypolicygenerator.info/live.php?token=q2PDHblJ6mFx3ADo11HmdKsduKHVEYFf"
@@ -27,7 +27,7 @@
         <div class="col-12 col-md-4 p-5 text-center">
             <a href="https://www.ecolabelindex.com/ecolabel/bdih-certified-natural-cosmetics-seal"
                 rel="external nofollow noopener" target="_blank">
-                <img src="{{ MEDIA_URL }}bdhi.png" alt="BDHI logo" class="m-1" width="150" height="150">
+                <img src="{{ MEDIA_URL }}bdhi.png" alt="BDHI logo" class="m-1" width="120" height="120">
             </a>
             <a href="https://www.peta.org/" rel="external nofollow noopener" target="_blank">
                 <img src="{{ MEDIA_URL }}peta.png" alt="PETA logo" class="m-1" width="150" height="100">
@@ -38,7 +38,7 @@
                     height="150">
             </a>
             <a href="https://www.nature.org/en-us/" rel="external nofollow noopener" target="_blank">
-                <img src="{{ MEDIA_URL }}logo-natrue-EN.png" alt="Nature.org logo" class="m-1" width="150" height="80">
+                <img src="{{ MEDIA_URL }}logo-natrue-EN.png" alt="Nature.org logo" class="m-1" width="150" height="70">
             </a>
         </div>
         <!-- Keep in touch section -->
@@ -106,7 +106,7 @@
     </div>
     <!-- Copyright section -->
     <div class="row">
-        <div class="col-12 p-5 text-center">
+        <div class="col-12 p-2 text-center">
             <p>Copyright &copy;Story Sparks Co. {% now "Y" %}</p>
             <p class="small">NOTE: Code Institute Project 5 - created for educational purposes. <br> No orders will be
                 processed.</p>
