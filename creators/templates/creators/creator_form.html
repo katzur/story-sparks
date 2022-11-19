@@ -15,7 +15,7 @@
 {% endblock %}
 
 {% block content %}
-    <div class="container pt-4">
+    <div class="container pt-4 mb-5">
         <div class="row">
             <div class="col-sm-12 col-lg-6">
                 <!-- Creator form -->
@@ -23,8 +23,8 @@
                     {% csrf_token %}
                     {{ form|crispy }}
                     <div class="d-flex align-items-start justify-content-between">
-                        <a href="{% url 'creators' %}" class="btn rounded-0 py-2 theme-btn"><i class="icon fa-solid fa-xmark px-1" aria-hidden="true"></i> Cancel</a>
-                        <button id="submit-button" class="btn btn-primary rounded-0 py-2 theme-btn">{% if object %}Update{% else %}Create{% endif %} Creator <i class="icon fa-solid fa-check px-1" aria-hidden="true"></i></button>    
+                        <a href="{% url 'creators' %}" class="btn btn-black rounded-0"><i class="icon fa fa-times-circle" aria-hidden="true"></i> Cancel</a>
+                        <button id="submit-button" class="btn btn-success rounded-0">{% if object %}Update{% else %}Create{% endif %} Creator <i class="icon fa fa-check" aria-hidden="true"></i></button>    
                     </div>
                 </form>
             </div>
