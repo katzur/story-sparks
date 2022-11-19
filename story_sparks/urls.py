@@ -29,6 +29,7 @@ urlpatterns = [
     path('checkout/', include('checkout.urls')),
     path('profile/', include('profiles.urls')),
     path('contact/', include('contact.urls')),
+    path("creators/", include("creators.urls")),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 handler404 = 'story_sparks.views.handler404'
 handler500 = 'story_sparks.views.handler500'

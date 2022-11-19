@@ -287,6 +287,21 @@ div.stroke ul li a:hover:after {
 	overflow-y: auto;
 }
 
+/* -------------------------------- Grey scale for creators section from https://thebrandsmen.com/css-image-hover-effects/ */
+
+.greyscale img {
+	filter: grayscale(100%);
+	-webkit-filter: grayscale(100%);
+	-webkit-transition: all 1s ease;
+}
+.greyscale:hover img {
+	filter: grayscale(0%);
+	filter: gray;
+	-webkit-filter: grayscale(0%);
+	filter: none;
+	transition: 1s ease;
+}
+
 /* -------------------------------- Carousel styling from https://www.tutorialrepublic.com/codelab.php?topic=bootstrap&file=testimonial-carousel-with-quote-icon*/
 
 h2 {

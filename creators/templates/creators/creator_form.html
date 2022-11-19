@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block page_header %}
+    <div class="container pt-5">
+        <div class="row">
+            <div class="col">
+                <!-- Page header -->
+                <h1 class="display-5 fw-bold pb-3">
+                    {% if object %}Update{% else %}Create{% endif %} Creator
+                </h1>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block content %}
+    <div class="container pt-4">
+        <div class="row">
+            <div class="col-sm-12 col-lg-6">
+                <!-- Creator form -->
+                <form method="POST" enctype="multipart/form-data">
+                    {% csrf_token %}
+                    {{ form|crispy }}
+                    <div class="d-flex align-items-start justify-content-between">
+                        <a href="{% url 'creators' %}" class="btn rounded-0 py-2 theme-btn"><i class="icon fa-solid fa-xmark px-1" aria-hidden="true"></i> Cancel</a>
+                        <button id="submit-button" class="btn btn-primary rounded-0 py-2 theme-btn">{% if object %}Update{% else %}Create{% endif %} Creator <i class="icon fa-solid fa-check px-1" aria-hidden="true"></i></button>    
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+{% endblock %}
