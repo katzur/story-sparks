@@ -321,3 +321,60 @@ Main page that allows the User to easily navigate through available options:
 * Section with a tins collage, small text section and a button to About Us page.
 * Banner above the footer with Instagram account name information and direct link to the social media.
 
+<details> <summary> Products </summary>
+<img src="https://story-sparks.s3.eu-west-1.amazonaws.com/media/products.png">
+</details>
+
+Products page displays the list of all products added to the store:
+* Sort field - allows to sort the available products by name (A-Z and Z-A) and price (lowest/ highest first)
+* Information about the number of avilable products.
+* List of the products containing: image, colorful background, name, price.
+* List can be filtered by Scent in the navbar on the top.
+* User can also perform a search on the products by name, description and ingredients.
+* When logged in as a superuser, additional buttons appear: "Edit" and "Delete". These give the superuser quick access to CRUD functionality.
+
+
+<details> <summary> Product Details </summary>
+<img src="https://story-sparks.s3.eu-west-1.amazonaws.com/media/product-details.png">
+</details>
+
+Product Details page provides further information about the selected product:
+* Larger image of the product on the left side.
+* On the right side information about: item name, price, description, ingredients. 
+* When logged in as a superuser, additional buttons appear: "Edit" and "Delete". These give the superuser quick access to CRUD functionality.
+* Quantity selector (minimum of 1 and a maximum of 99).
+* Buttons on the bottom: Add to bag and Keep shopping.
+
+<details> <summary> Shopping Bag </summary>
+<img src="https://story-sparks.s3.eu-west-1.amazonaws.com/media/bag.png">
+</details>
+
+Full-page view of User's current shopping bag:
+* Column headings with color matching the free delivery banner and the footer for color consistency across the page: Product info, Price, Qty, Subtotal.
+* Products list: image, name, price per 1 item, quantity selector and buttons: Update and Delete, subtotal.
+* Information in the right bottom corner: Bag total, delivery cost, total cost.
+* If the items total is lower than €50 - information how much User needs to spend to get the free delivery.
+* Buttons on the bottom: Keep Shopping and Secure Checkout.
+
+<details> <summary> Checkout </summary>
+<img src="https://story-sparks.s3.eu-west-1.amazonaws.com/media/checkout.png">
+</details>
+
+Checkout contains a delivery information form and order details:
+* On the left side delivery information form needs to be filled with necessary information.
+* Customer has an option to save the details for the future purchases and store delivery information within My Profile page.
+* Card details displayed on the bottom and verified by Stripe.
+* On the right side Order details section - displays the same information as the Shopping bag.
+* Buttons on the bottom: Adjust bag (back to the Shopping bag in need of adjustment) or Complete order - based on provided details.
+
+<details> <summary> Purchase Confirmation </summary>
+<img src="https://story-sparks.s3.eu-west-1.amazonaws.com/media/confirmation.png">
+</details>
+
+After successful checkout User will see the Purchase Confirmation page:
+* A success toast message will display in the right top corner informing the user about successfully finished transaction and the order number.
+* Thank you page for the User for placing their order. Information on the top about a confirmation email being sent via email to the specified email address.
+* Confirmation page displays all of the order details (without the payment details), date and time, order number.
+* Button visible on the bottom: Now let's check the other products, which brings the User to the All products page.
+* Information displayed on this page, can be viewed by the user under My Profile > Order History.
+
