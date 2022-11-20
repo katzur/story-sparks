@@ -94,6 +94,20 @@ hr {
 	color: #edede4;
 }
 
+/* -------------------------------- Shipping and returns card styling */
+
+.card-header {
+	background-color: rgb(200 209 202);
+}
+
+.card .btn.focus, .btn:focus {
+	box-shadow: 0 0 0 0.2rem rgb(183 185 175);
+}
+
+.card {
+	border: 1px solid #7b7d74;
+}
+
 /* -------------------------------- Effect-shine for Instagram reference from https://www.graphicpie.com/css-text-hover-effects/*/
 
 a.effect-shine:hover {
