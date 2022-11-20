@@ -28,3 +28,8 @@ def contact(request):
     }
 
     return render(request, template, context)
+
+
+def shipping_returns(request):
+    """View to return shipping and returns page"""
+    return render(request, 'contact/shipping-returns.html')

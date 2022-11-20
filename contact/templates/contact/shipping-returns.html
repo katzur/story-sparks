@@ -1,0 +1,107 @@
+{% extends 'base.html' %}
+{% load static %}
+
+<!-- Header placeholder -->
+{% block page_header %}
+<div class="container header-container">
+    <div class="row">
+        <div class="col"></div>
+    </div>
+</div>
+{% endblock %}
+
+{% block content %}
+<div class="overlay"></div>
+<div class="container h-100 mb-5">
+    <div class="row">
+        <div class="col">
+            <!-- Page Title -->
+            <h2 class="logo-font mb-4 text-center page-title"><strong>
+                    Shipping & Returns
+                </strong></h2>
+            <hr class="w-50">
+        </div>
+    </div>
+    <div class="accordion" id="accordion">
+        <!-- Shipping and Returns Information -->
+        <div class="card">
+            <div class="card-header" id="headingOne">
+                <h2 class="mb-0">
+                    <button class="btn btn-link text-left" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        How long does it take to ship?
+                    </button>
+                </h2>
+            </div>
+            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                <div class="card-body">
+                    Shipping takes between 3-5 working days.
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header" id="headingTwo">
+                <h2 class="mb-0">
+                    <button class="btn btn-link text-left" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        Do you ship internationally?
+                    </button>
+                </h2>
+            </div>
+            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                <div class="card-body">
+                    Yes, we can organize international shipping.<br>
+                    Please contact us first through the <a href="{% url 'contact' %}"> Contact Form </a>
+                    or send us an email <a href="mailto:myemailaddress@gmail.com" target="_blank" aria-label="Contact Us Via Email"><i class="fas fa-at"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header" id="headingThree">
+                <h2 class="mb-0">
+                    <button class="btn btn-link text-left" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        Do you accept returns?
+                    </button>
+                </h2>
+            </div>
+            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                <div class="card-body">
+                    We will happily refund all items, as long as received in their original packaging in re-saleable condition,<br>
+                    or if the received candles deemed to be faulty.
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header" id="headingFour">
+                <h2 class="mb-0">
+                    <button class="btn btn-link text-left" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                        What if I have a faulty item?
+                    </button>
+                </h2>
+            </div>
+            <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
+                <div class="card-body">
+                    Sorry to hear that! Please write to us, and we'll arrange a replacement.<br>
+                    Note that all our candles are hand poured and we can't guarantee that they'll look exactly the same.<br>
+                    You are also welcomed to return your order for a full refund.
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header" id="headingFive">
+                <h2 class="mb-0">
+                    <button class="btn btn-link text-left" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                        How long until I receive my refund?
+                    </button>
+                </h2>
+            </div>
+            <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordion">
+                <div class="card-body">
+                    When returning your orders, we would kindly ask that you allow 14 days, from the date posted,<br>
+                    for your return to be processed. Please ensure you retain a copy of your return tracking information<br>
+                    until your refund has been confirmed.
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
