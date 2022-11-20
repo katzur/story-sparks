@@ -23,8 +23,8 @@
         * [Wireframes](<#wireframes>)
     * [Surface](#surface)
 3. [Agile](#agile)
-    * [Epics](#epics)
     * [Kanban Board](#kanban-board)
+    * [Epics](#epics)
 4. [Features](<#features>)
 	* [Existing Features](<#existing-features>)
 	* [Future Features](<#future-features>)
@@ -250,4 +250,35 @@ I decided to stay mostly with default fonts that came with Bootstrap CSS styling
 * All icons used for Story Sparks Co. come from [FontAwesome](https://fontawesome.com/)
 * All images used for Story Sparks Co. About Us come from [Pexels](https://www.pexels.com/)
 * Product images were created by me. For product visualisation I used [Printful](https://www.printful.com/custom-candles#create) and [Cortado.ie](https://www.contrado.ie/estore/design/)
+
+# Agile
+## Kanban Board
+Story Sparks Co. e-commerce store project was based on the Agile Methodology. I used Agile Kanban Board Framework and implemented it in the site's creation process. 
+* It can be viewed [here](https://github.com/users/katzur/projects/6)
+It was divided into three sections for clear tasks distribution and visual progress:
+* Todo
+* In Progress
+* Done
+
+<details><summary>Kanban Board look for the project</summary><img src="https://story-sparks.s3.eu-west-1.amazonaws.com/media/kanban-board.png"></details>
+
+Based on the Iterative Development idea - while working on this project, I added new functional capabilities and modified existing features as needed over time. Different parts of the project were developed at various times and were integrated based on their successful completion. Increments were build based on their functionality need to not spend efforts on building features not neccessary for the project. Subsequent iterations were implemented based on the Users feedback and tests.
+
+MoSCoW prioritization was taken under consideration while creating this project - some of the User Stories were critical (like CRUD functionality, processing orders) compared to other User Stories rather considerable (contact form, Shipments & Returns Q&A, About Us). Those with smaller impact were left for the later phase of page development, while other - vital ones - were guaranteed to be delivered on time. Timeboxing and prioritization were crutial for this project and can be reflected by viewing Iteration process (Todo > In Progress > Done) and labels assigned to each User Story (Must Have, Could Have and Won't Have).
+
+## Epics
+Story Sparks Co. project was broken into smaller Epics and were reflected in the creation process by starting new apps. Groups of User Stories were added to the Kanban Board based on those firstly established Epics. 
+
+Epics (Ideas):
+* Purchasing (Shopping Bag) and Checkout
+* Contact and Searchability - Contact Form, Subscription Form, Social Media
+* About Us - Information about creators
+* User Notifications (emails, toasts)
+* Page Visibility (Search, Sort, Order History, My Profile)
+* Viewing and Navigation - Products, Product Details
+* CRUD - Management for the User and Admin
+* Registration and User Accounts (Sign-in, Sign-up, Log out, Password Reset)
+
+
+
 
