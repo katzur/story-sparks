@@ -208,7 +208,7 @@ As a result the page functionality was split into separate applications. For thi
 ## Skeleton
 The store website was designed to provide the User with an expected product - easy to navigate, with search bar on the top, clear navigation, easy to identify sections and helpful icons. 
 The header and footer on each page repeats, colors are consistent across the all subpages. Amount of information is not excesive - helping the Users to intuitively find what they're looking for. 
-Wireframes for main pages for all screen sizes (desktop, tablet and mobile) were created in Balsamiq, as shown below.
+Wireframes for main pages for all screen sizes (desktop, tablet and mobile) were created in [Balsamiq](https://www.balsamiq.com/), as shown below.
 
 ### Wireframes
 <details> <summary> Home page</summary>
@@ -226,3 +226,28 @@ Wireframes for main pages for all screen sizes (desktop, tablet and mobile) were
 <details> <summary> My Profile</summary>
 <img src="https://story-sparks.s3.eu-west-1.amazonaws.com/media/wireframe-profile.png">
 </details>
+
+## Surface
+The aim was to design a store, that would look modern and warm, but comply with Users experience of using online e-commerce stores.
+### Colors
+The colors used within all the pages are shown below and were inspired by some of the [Pinterest](https://www.pinterest.com/) ideas for modern web design. They are complimented by simple and readable product images, buttons and toast messages. I wanted to achieve consistent website look that would reflect store's character. Colors and layout of the elements were intentionally picked to keep the modern, simple design. Colors compliment each other well and keep great page contrast, which makes it more user-friendly and accessible. Confirmed on [Coolors](https://coolors.co/):
+
+<details> <summary> Color Palette</summary>
+<img src="https://story-sparks.s3.eu-west-1.amazonaws.com/media/color-palette.png">
+</details>
+<details> <summary> Contrast Checker</summary>
+<img src="https://story-sparks.s3.eu-west-1.amazonaws.com/media/contrast-checker1.png">
+<img src="https://story-sparks.s3.eu-west-1.amazonaws.com/media/contrast-checker2.png">
+</details>
+
+### Typography
+I decided to stay mostly with default fonts that came with Bootstrap CSS styling. Two fonts I especially liked to continuously use within this project to provide satisfiying design:
+
+* Segoe UI - well known, easy to read, fits the page overal style. Used for the page name and login/ registration pages.
+* Roboto - sans-serif font - clean and easy to read.
+
+### Images
+* All icons used for Story Sparks Co. come from [FontAwesome](https://fontawesome.com/)
+* All images used for Story Sparks Co. About Us come from [Pexels](https://www.pexels.com/)
+* Product images were created by me. For product visualisation I used [Printful](https://www.printful.com/custom-candles#create) and [Cortado.ie](https://www.contrado.ie/estore/design/)
+
