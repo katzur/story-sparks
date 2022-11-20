@@ -272,13 +272,52 @@ Story Sparks Co. project was broken into smaller Epics and were reflected in the
 Epics (Ideas):
 * Purchasing (Shopping Bag) and Checkout
 * Contact and Searchability - Contact Form, Subscription Form, Social Media
-* About Us - Information about creators
+* Information about the shop and handling - Information about creators in About Us and Shipping and Returns Q&A
 * User Notifications (emails, toasts)
 * Page Visibility (Search, Sort, Order History, My Profile)
 * Viewing and Navigation - Products, Product Details
 * CRUD - Management for the User and Admin
 * Registration and User Accounts (Sign-in, Sign-up, Log out, Password Reset)
 
+# Features
+Story Sparks Co. was designed as a functional e-commerce store and features were selected based on the Kanban Board and MoSCoW prioritization (applied labels to User Stories). 
+During the process of the page creation I was able to decide what needs to be implemented, and what set of features can be potentially added in the future.
 
+## Existing Features
+<details> <summary> Header </summary>
+<img src="https://story-sparks.s3.eu-west-1.amazonaws.com/media/header.png">
+</details>
 
+Header is a static element visible on every page. It contains:
+* Free delivery banner, to let the Users know that they can get free shipping if they place an order over €50.
+* Logo visible on large screens (desktop) on the top left. It's removed on smaller screens (tablet, mobile) to reduce the navbar size.
+* Search bar in the center on large screens (desktop). Reduced to a loop icon on smaller screens (tablet, mobile) due to space economy.
+* My Account button with dropdown menu that provides links for "Register" and "Login", allowing users to either register for a new account, or login with an existing one. 
+Once logged in, the links update to "My Profile" and "Logout". If logged in as a superuser, there is also a "Product Management" link available here.
+* Cart button - transfers the User to Bag view page. 
+* Navigation contains "All Candle Types", "Scents", "About & Contact" links, helping users to navigate to the needed parts of the store. On smaller screens (tablet, mobile) replaced with Hamburger Icon.
+
+<details> <summary> Footer </summary>
+<img src="https://story-sparks.s3.eu-west-1.amazonaws.com/media/footer.png">
+</details>
+
+Footer color compliments the free delivery banner for page's consistency. It contains:
+* "Let's keep in touch!" section with social media icons, that open social media pages in a new window.
+* Newsletter sign up field. Connected to [Mailchimp](https://mailchimp.com/). User can add their email address to subscribe to the latest offers emails.
+* Middle section with useful links - All Products, About Us, Contact, Shipping and Returns, Privacy Policy, Terms & Conditions.
+* Organisation logos and links - BDIH, Peta, Nature.org and Zero Waste Movement.
+* Copyright section and disclaimer about educational purpose of the page.
+
+<details> <summary> Home page </summary>
+<img src="https://story-sparks.s3.eu-west-1.amazonaws.com/media/home1.png">
+<img src="https://story-sparks.s3.eu-west-1.amazonaws.com/media/home2.png">
+<img src="https://story-sparks.s3.eu-west-1.amazonaws.com/media/home3.png">
+</details>
+
+Main page that allows the User to easily navigate through available options:
+* Hero section: Hero image with funny candle collage and a small description with the button to the store.
+* 3 tiles with the featured links to: store, scents and special offers.
+* Testimonial carrousel section with comments from media sources about Story Sparks Co.
+* Section with a tins collage, small text section and a button to About Us page.
+* Banner above the footer with Instagram account name information and direct link to the social media.
 
