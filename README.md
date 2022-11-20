@@ -194,3 +194,35 @@ Color legend:
 <details><summary>View the User Journey Diagram</summary>
 <img src="https://story-sparks.s3.eu-west-1.amazonaws.com/media/user-journey.png">
 </details>
+
+Story Sparks Co. was developed usiutalizing Django. 
+As a result the page functionality was split into separate applications. For this project I created 7 apps for clear functionality split:
+* bag - functionality for basket view, where the user can verify product added to the bag
+* checkout - functionality for checkout procedure, where the user processes with the payment and adds the delivery details
+* contact - functionality for contact form and Shipping & Returns Q&A page
+* creators - functionality for About Us section listing all current Story Sparks members, as well as give the Admin an option to add, edit and delete them. 
+* home - functionality for main homepage - navbars, search bar, access to the basket and account options, as well as testimonials, social media, subscription field and Provacy Policy and Terms & Conditions.
+* products - functionality for the products to be listed and searched - based on the categories and scents.
+* profiles - functionality for the profile management - login in/out, registration, profile page with delivery details, order history and product management for the Admins.
+
+## Skeleton
+The store website was designed to provide the User with an expected product - easy to navigate, with search bar on the top, clear navigation, easy to identify sections and helpful icons. 
+The header and footer on each page repeats, colors are consistent across the all subpages. Amount of information is not excesive - helping the Users to intuitively find what they're looking for. 
+Wireframes for main pages for all screen sizes (desktop, tablet and mobile) were created in Balsamiq, as shown below.
+
+### Wireframes
+<details> <summary> Home page</summary>
+<img src="https://story-sparks.s3.eu-west-1.amazonaws.com/media/wireframe-home.png">
+</details>
+<details> <summary> Shopping Bag</summary>
+<img src="https://story-sparks.s3.eu-west-1.amazonaws.com/media/wireframe-bag.png">
+</details>
+<details> <summary> Checkout</summary>
+<img src="https://story-sparks.s3.eu-west-1.amazonaws.com/media/wireframe-checkout.png">
+</details>
+<details> <summary> Products</summary>
+<img src="https://story-sparks.s3.eu-west-1.amazonaws.com/media/wireframe-products.png">
+</details>
+<details> <summary> My Profile</summary>
+<img src="https://story-sparks.s3.eu-west-1.amazonaws.com/media/wireframe-profile.png">
+</details>
