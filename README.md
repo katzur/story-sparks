@@ -170,7 +170,27 @@ Story no. | Feature | Importance
 35 | Shipment & Returns Q&A | COULD HAVE
 36 | ADMIN: Send newsletters | WON'T HAVE
 
+### Priority Chart
 <details><summary>Priority chart implementation</summary>
 <img src="https://story-sparks.s3.eu-west-1.amazonaws.com/media/chart.jpg">
 </details>
 
+## Structure
+### Database Models Diagram
+To create a database models diagram I used great and intuitive online tool [DrawSQL](https://drawsql.app/).
+<details><summary>View the Database Models Diagram</summary>
+<img src="https://story-sparks.s3.eu-west-1.amazonaws.com/media/models+diagram.jpg">
+</details>
+
+### User Journey Diagram
+To create a user journey diagram I used known and reliable online tool [Diagrams.net](hhttps://www.diagrams.net/).
+
+Color legend:
+* Blue - parent pages containing subpages
+* Grey - all other subpages and additional features (Search, Footer)
+* Green - subpages requiring User to be logged in
+* Purple - subpages accessable only for the Admins
+
+<details><summary>View the User Journey Diagram</summary>
+<img src="https://story-sparks.s3.eu-west-1.amazonaws.com/media/user-journey.png">
+</details>
