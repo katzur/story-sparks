@@ -8,7 +8,7 @@
 2. [Validator Testing](#validator-testing)
     * [HTML](#html)
     * [CSS](#css)
-    * [JSHINT](#jshint)
+    * [JSHint](#jshint)
     * [Python Validation - Pycodestyle](#python-validation---pycodestyle)
     * [Lighthouse](#lighthouse)
 3. [Device Testing](#device-testing)
@@ -223,3 +223,48 @@ Superusers can delete exisiting team members of Story Sparks Co. in About Us sec
 # Validator Testing
 ## HTML
 All HTML pages were run through the [W3C HTML Validator](https://validator.w3.org/). See results in the table below.
+| Page                           | Result     | 
+|--------------------------------|------------|
+| Home                           | No Errors  |
+| All Products                   | No Errors  |
+| Product Detail                 | No Errors  |
+| Search Result                  |            |
+| Add Product                    | N/A        |
+| Edit Product                   | N/A        |
+| Confirm Delete Product         | N/A        |
+| Bag                            | No Errors  |
+| Checkout                       | No Errors  |
+| Checkout Success               | No Errors  |
+| Profile                        | N/A        |
+| Order History                  | N/A        |
+| Product Management             | N/A        |
+| Contact                        | No Errors  |
+| Sign In                        | No Errors  |
+| Sign Up                        | No Errors  |
+| Log Out                        | N/A        |
+| Password Reset                 | No Errors  |
+| 404.html                       | No errors  |
+| 500.html                       | No errors  |
+| About Us                       |            |
+| Add Creator                    | N/A        |
+| Edit Creator                   | N/A        |
+| Confirm Delete Creator         | N/A        |
+| Returns & Shipping             |            |
+
+## CSS
+
+## JSHint
+
+## Python Validation - Pycodestyle
+
+## Lighthouse
+
+# Device Testing
+The store pages were viewed and tested on a variety of devices such as Desktop, Large Desktop, Laptop 13", iPhone 13mini, iPhoneX and iPad to ensure responsiveness on different screen sizes. 
+The page performed as expected. The responsive design was also checked using Chrome Developer Tools across multiple devices. Additionally it was tested thorugh [Am I Responsive?](https://ui.dev/amiresponsive) to provide a demo.
+
+# Browser Testing
+The page was tested using Chrome, Firefox, Safari and Edge browsers without any issues.
+
+# Manual Testing
+## Site Navigation
