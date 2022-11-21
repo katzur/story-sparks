@@ -525,7 +525,7 @@ For this project I created a [Facebook page](https://www.facebook.com/storyspark
 * Django Testing from Code Institute ['Hello Django' Walkthrough project](https://learn.codeinstitute.net/courses/course-v1:CodeInstitute+FST101+2021_T1/courseware/dc049b343a9b474f8d75822c5fda1582/5666926980b74689b37a0d5da3cec510/)
 * Color pallete creator and contrast checker were from on [Coolors](https://coolors.co/)
 * The collages were created on [VistaCreate](https://create.vista.com/home/)
-* [Pinterest]((https://www.pinterest.com/) - web design ideas. Color palette idea based on [this pin](https://pl.pinterest.com/pin/598767712973280418/)
+* [Pinterest](https://www.pinterest.com/) - web design ideas. Color palette idea based on [this pin](https://pl.pinterest.com/pin/598767712973280418/)
 * [Printful](https://www.printful.com/custom-candles#create) and [Cortado.ie](https://www.contrado.ie/estore/design/) - creating product visualisations
 * [Pexels](https://www.pexels.com/) - images used for Story Sparks Co. About Us:
     * [Image 1](https://www.pexels.com/photo/a-woman-smiling-at-the-camera-8271815/)
@@ -538,5 +538,275 @@ For this project I created a [Facebook page](https://www.facebook.com/storyspark
 * [The Brandsmen](https://thebrandsmen.com/css-image-hover-effects/) - image hover effects
 * Inspiration from the other beautiful CI students projects: [Fresh Nest](https://fresh-nest.herokuapp.com/), [The Chocolate Factory](https://the-chocolate-factory.herokuapp.com/), [Dry Drops](https://dry-drops.herokuapp.com/), [Heiwa Gallery](https://heiwa-gallery.herokuapp.com/) Thank you all!
 
+# Testing
+Due to the size of the testing section, I created additional testing page.
+Please go to [TESTING.md](TESTING.md) for information on testing and validation.
+
+# Deployment
+## Forking The GitHub Repository
+To use this code and make changes without affecting the original code you can do what is called 'Forking the repository'. 
+By forking this repository you are given a copy of the code at that moment in time that you can use freely. 
+To fork this repository you need to follow the following few steps:
+
+1. Create an account or log into your existing GitHub account.
+2. Navigate to the [Repository](https://github.com/katzur/story-sparks), you are wanting to fork.
+3. In the upper-right of the repository, click the 'Fork' button.
+4. A copy of the Repository will now be available within your repositories.
+
+You will now have a copy of the code available to clone and work on without affecting the original code.
+
+## Cloning the Project.
+To make a local clone of the project follow these steps:
+
+1. Log into your GitHub account.
+2. Navigate to the [Repository](https://github.com/katzur/story-sparks).
+3. In the upper section of the repository click the drop-down option: 'Code'.
+4. Ensure HTTPS is selected and click the clipboard on the right of the URL to copy it.
+5. Open a new workspace in GitPod.
+6. Open GitBash. In the bash terminal type 'git clone [copy url here from step 4]'
+7. Press enter - the IDE will clone and download the repo.
+8. GitBash will clone the repository into this directory.
+9. Optionally type: 'python3 manage.py runserver' to host the website locally - it won't run the python file, only allow you see how it looks.
+10. To use the required libraries: type in the console: pip3 install -r requirements.txt.
+11. To create a web-app from the repo, follow the instructions in "Heroku App Deployment".
+
+## GitHub Desktop App
+1. Log in to your GitHub account or create an account.
+2. Navigate to the [Repository](https://github.com/katzur/story-sparks).
+3. Select the 'Code' button above the file list on the right had side.
+4. Select 'Open with GitHub Desktop'
+5. Install GitHub Desktop Application.
+6. The repo will be copied locally onto your machine.
+7. If you want to create a web-app from the repo please follow the instructions in "Heroku App Deployment"
+
+## Download and extract the zip directly from GitHub
+1. Log in to your GitHub account
+2. Navigate to the [Repository](https://github.com/katzur/story-sparks)
+3. Select the 'Code' button above the file list on the right had side
+4. Select 'Download Zip'
+5. Once you have the Zip downloaded, open it with your preferred file decompression software
+6. You can then drag and drop the files from the folder into your chosen IDE or view/edit them on your local machine
+7. In the console, run: pip install -r requirements.txt
+8. If you want to create a web-app from the repo please follow the instructions in "Project Deployment"
+
+## Deployment - Heroku
+To deploy this page to Heroku from its GitHub repository, follow these steps:
+### <ins>Create the Heroku App</ins>
+- Log in to [Heroku](https://dashboard.heroku.com/apps) or create an account.
+- On the main page click the button labelled New in the top right corner and from the drop-down menu select "Create New App".
+- Enter a unique and meaningful app name.
+- Next, select your region.
+- Click on the Create App button.
+
+### <ins>Create a database wth ElephantSQL</ins>
+- Log in to [ElephantSQL.com](https://www.elephantsql.com/) to access your dashboard
+- If you don't have an ElephantSQL.com account yet, the [steps to create one are here](https://code-institute-students.github.io/deployment-docs/02-elephantsql/elephantsql-01-sign-up).
+- Click “Create New Instance”
+- Set up your plan: Name, Tiny Turtle (Free) plan, You can leave the Tags field blank
+- Select “Select Region” -Select a data center near you
+- Click “Review”
+- Check your details are correct and then click “Create instance”
+- Return to the ElephantSQL dashboard and click on the database instance name for this project
+- In the URL section, clicking the copy icon will copy the database URL to your clipboard
+
+
+### <ins>Attach the ElephantSQL database to Heroku</ins>
+- Open the Settings tab in Heroku app, then reveal Config Vars
+- Add the config var DATABASE_URL, and for the value, copy in your database url from ElephantSQL. Do not add quotation marks around your database url string.
+- Go back to your IDE and install 2 more requirements: `pip3 install dj_database_url==0.5.0 psycopg2`
+- Update your requirements.txt file with the newly installed packages by typing: `pip3 freeze --local > requirements.txt`
+- In your settings.py file, import dj_database_url underneath the import for os: 
+    - `import os`
+    - `import dj_database_url`
+- Scroll to the DATABASES section and update it to the following:
+```
+ # DATABASES = {
+ #     'default': {
+ #         'ENGINE': 'django.db.backends.sqlite3',
+ #         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+ #     }
+ # }
+     
+ DATABASES = {
+     'default': dj_database_url.parse('your-database-url-here')
+ }
+```
+- DO NOT commit this file with your database string in the code, this is temporary so that we can connect to the new database and make migrations.
+- In the terminal, run the showmigrations command to confirm you are connected to the external database: `python3 manage.py showmigrations`
+- Migrate your database models to your new database: `python3 manage.py migrate`
+- Load in the fixtures. Please note the order is very important here. We need to load categories first: `python3 manage.py loaddata categories`
+- Then products, as the products require a category to be set: `python3 manage.py loaddata products`
+- Create a superuser for your new database: `python3 manage.py createsuperuser`
+- Create an if statement in settings.py to run the ElephantSQL database when using the app on heroku or sqlite if not
+
+```
+    if 'DATABASE_URL' in os.environ:
+        DATABASES = {
+            'default': dj_database_url.parse(os.environ.get('DATABASE_URL'))
+        }
+    else:
+        DATABASES = {
+            'default': {
+                'ENGINE': 'django.db.backends.sqlite3',
+                'NAME': BASE_DIR / 'db.sqlite3',
+            }
+    }
+```
+- Create requirements.txt file by typing `pip3 freeze --local > requirements.txt`
+- Create a file named "Procfile" in the main directory and add the following: `web: gunicorn project-name.wsgi:application`
+- Add Heroku to the ALLOWED_HOSTS list in settings.py in the format ['app_name.heroku.com', 'localhost']
+- Push these changes to Github.
+
+### Update Heroku Config Vars
+Add the following Config Vars in Heroku:
+
+|     Variable name     |                           Value/where to find value                           |
+|:---------------------:|:-----------------------------------------------------------------------------:|
+| AWS_ACCESS_KEY_ID     | AWS CSV file(instructions below)                                               |
+| AWS_SECRET_ACCESS_KEY | AWS CSV file(instructions below)                                               |
+| DATABASE_URL          | ElephantSQL generated (as per step above)                                        |
+| EMAIL_HOST_PASS       | Password from email client                                                    |
+| EMAIL_HOST_USER       | Site's email address                                                          |
+| SECRET_KEY            | Random key generated as above                                                 |
+| STRIPE_PUBLIC_KEY     | Stripe Dashboard > Developers tab > API Keys > Publishable key                |
+| STRIPE_SECRET_KEY     | Stripe Dashboard > Developers tab > API Keys > Secret key                     |
+| STRIPE_WH_SECRET      | Stripe Dashboard > Developers tab > Webhooks > site endpoint > Signing secret |
+| USE_AWS               | True (when AWS set up - instructions below)                                   |
+
+### Deploy
+- NB: Ensure in Django settings, DEBUG is False
+- Go to the deploy tab on Heroku and connect to GitHub, then to the required repository. 
+- Scroll to the bottom of the deploy page and either click Enable Automatic Deploys for automatic deploys or Deploy Branch to deploy manually. Manually deployed branches will need re-deploying each time the repo is updated.
+- Click View to view the deployed site.
+
+The site is now live and operational.
+
+
+## AWS Set Up
+### AWS S3 Bucket
+- Create an AWS account.
+- From the 'Services' tab on the AWS Management Console, search 'S3' and select it.
+- Click 'Create a new bucket', give it a name(match your Heroku app name if possible), and choose the region closest to you.
+- Under 'Object Ownership' select 'ACLs enabled' and leave the Object Ownership as Bucket owner preferred.
+- Uncheck block all public access and acknowledge that the bucket will be public.
+- Click 'Create bucket'.
+- Open the created bucket, go to the 'Properties' tab. Scroll to the bottom and under 'Static website hosting' click 'edit' and change the Static website hosting option to 'enabled'. Copy the default values for the index and error documents and click 'save changes'.
+- Open the 'Permissions' tab, locate the CORS configuration section and add the following code:
+```
+[
+  {
+      "AllowedHeaders": [
+          "Authorization"
+      ],
+      "AllowedMethods": [
+          "GET"
+      ],
+      "AllowedOrigins": [
+          "*"
+      ],
+      "ExposeHeaders": []
+  }
+]
+```
+- In the 'Bucket Policy' section and select 'Policy Generator'.
+- Choose 'S3 Bucket Policy' from the type dropdown.
+- In 'Step 2: Add Statements', add the following settings:
+    - Effect: Allow
+    - Principal: *
+    - Actions: GetObject
+    - ARN: Bucket ARN (copy from S3 Bucket page)
+- Click 'Add Statement'.
+- Click 'Generate Policy'.
+- Copy the policy from the popup that appears
+- Paste the generated policy into the Permissions > Bucket Policy area.
+- Add '/*' at the end of the 'Resource' key, and save.
+- Go to the 'Access Control List' section click edit and enable List for Everyone (public access) and accept the warning box.
+
+
+### IAM
+- From the 'Services' menu, search IAM and select it.
+- Once on the IAM page, click 'User Groups' from the side bar, then click 'Create group'. Choose a name and click 'Create'.
+- Go to 'Policies', click 'Create New Policy'. Go to the 'JSON' tab and click 'Import Managed Policy'. 
+- Search 'S3' and select 'AmazonS3FullAccess'. Click 'Import'.
+- Get the bucket ARN from 'S3 Permissions' as per above.
+- Delete the '*' from the 'Resource' key and add the following code into the area:
+
+```
+"Resource": [
+    "YOUR-ARN-NO-HERE",
+    "YOUR-ARN-NO-HERE/*"
+]
+```
+
+- Click 'Next Tags' > 'Next Review' and then provide a name and description and click 'Create Policy'.
+- Click'User Groups' and open the created group. Go to the 'Permissions' tab and click 'Add Permissions' and then 'Attach Policies'.
+- Search for the policy you created and click 'Add Permissions'.
+- You need to create a user to put in the group. Select users from the sidebar and click 'Add user'.
+- Give your user a user name, check 'Programmatic Access'.
+- Click 'Next' and select the group you created.
+- Keep clicking 'Next' until you reach the 'Create user' button and click that.
+- Download the CSV file which contains the AWS_SECRET_ACCESS_KEY and your AWS_ACCESS_KEY_ID needed in the Heroku variables as per above list and also in your env.py.
+
+
+### Connecting S3 to Django 
+- Go back to your IDE and install 2 more requirements:
+    - `pip3 install boto3`
+    - `pip3 install django-storages` 
+- Update your requirements.txt file by typing `pip3 freeze --local > requirements.txt` and add storages to your installed apps.
+- Create an if statement in settings.py 
+
+```
+if 'USE_AWS' in os.environ:
+    AWS_STORAGE_BUCKET_NAME = 'insert-your-bucket-name-here'
+    AWS_S3_REGION_NAME = 'insert-your-region-here'
+    AWS_ACCESS_KEY_ID = os.environ.get('AWS_ACCESS_KEY_ID')
+    AWS_SECRET_ACCESS_KEY = os.environ.get('AWS_SECRET_ACCESS_KEY')
+```
+- Then add the line 
+
+    - `AWS_S3_CUSTOM_DOMAIN = f'{AWS_STORAGE_BUCKET_NAME}.s3.amazonaws.com'` to tell django where our static files will be coming from in production.
+
+
+- Create a file called custom storages and import both our settings from django.con as well as the s3boto3 storage class from django storages. 
+- Create the following classes:
+
+```
+class StaticStorage(S3Boto3Storage):
+    location = settings.STATICFILES_LOCATION
+class MediaStorage(S3Boto3Storage):
+    location = settings.MEDIAFILES_LOCATION
+```
+
+- In settings.py add the following inside the if statement:
+
+```
+STATICFILES_STORAGE = 'custom_storages.StaticStorage'
+STATICFILES_LOCATION = 'static'
+DEFAULT_FILE_STORAGE = 'custom_storages.MediaStorage'
+MEDIAFILES_LOCATION = 'media'
+STATIC_URL = f'https://{AWS_S3_CUSTOM_DOMAIN}/{STATICFILES_LOCATION}/'
+MEDIA_URL = f'https://{AWS_S3_CUSTOM_DOMAIN}/{MEDIAFILES_LOCATION}/'
+```
+
+- and then add the following at the top of the if statement:
+```
+AWS_S3_OBJECT_PARAMETERS = {
+    'Expires': 'Thu, 31 Dec 2099 20:00:00 GMT',
+    'CacheControl': 'max-age=94608000',
+}
+```
+
+- Go to S3, go to your bucket and click 'Create folder'. Name the folder 'media' and click 'Save'.
+- Inside the folder, click 'Upload', 'Add files', and then select all the images that you are using for your site.
+- Then under 'Permissions' select the option 'Grant public-read access' and click upload.
+- Your static files and media files should be automatically linked from django to your S3 bucket.
+
+
+
+# Credits and Acknowledgments 
+* Huge thank you to my Code Institute fellow students from cohort msletb-nov-2021 and our amazing faciliator Kasia Bogucka.
+* Thank you to my mentor Chris Quinn for his precious suggestions and support during this year with Code Institute.
+* Thanks to my fiancé Dino for ongoing support and reassurance that stepping into the coding world was the best idea.
+* Last but not least thanks to Code Institute's Tutor Support and Student Care Teams for their help, when really needed.
 
 
