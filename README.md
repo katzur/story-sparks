@@ -35,10 +35,11 @@
     * [Newsletter](#newsletter)
     * [Social media](#social-media)
 6. [Technologies Used](<#technologies-used>)
-7. [Testing](<#testing>)
+7. [Content](<#content>)
+8. [Testing](<#testing>)
     * [Stripe Testing Guidance](#stripe-testing-guidance)
-8. [Deployment](<#deployment>)
-9. [Credits](<#credits>)
+9. [Deployment](<#deployment>)
+10. [Credits](<#credits>)
 
 
 # Introduction
@@ -491,8 +492,45 @@ Newsletter for Story Sparks Co. was created by using the [Mailchimp](https://mai
 
 ## Social media
 Social Media Marketing is a great way to become recognizable for the potential customers within the various social media platforms. It helps with tageting the selected audience, as different social media platforms are attractive to different age groups. Additionally it adds extra links for search engines, building the site's authenticity. 
-For this project I created a Facebook page that matches the store in its design.
+For this project I created a [Facebook page](https://www.facebook.com/storysparksco) that matches the store in its design.
 
 <details> <summary> Story Sparks Co. Facebook Page </summary>
 <img src="https://story-sparks.s3.eu-west-1.amazonaws.com/media/facebook.png">
 </details>
+
+# Technologies Used
+## Languages and Frameworks
+* HTML
+* CSS
+* JavaScript
+* Python
+* Django - Python Framework used to create the project.
+* Bootstrap - CSS framework used for designing the project.
+
+## Other Technologies
+* DevTools - help fix problem areas and identify the errors.
+* Heroku - project deployment.
+* ElephantSQL - database used through Heroku.
+* Amazon AWS S3 - store static and media files.
+* GitHub, Gitpod - storing code and deploying the site, building and editing the code.
+* Notepad++ - help with writing some additional code, experiments and changes.
+* Balsamiq - wireframes creation.
+* Diagram.net - user journey website diagram creation
+* DrawSQL - database models schema creation
+
+## Content
+* [E-wallet idea](https://pl.pinterest.com/pin/293859944448506091/) - found on Pinterest in design suggestions
+* Django tutorial series from [Cryce Truly](https://www.youtube.com/c/CryceTruly) - absolutely great content teaching basic Django and JavaScript/ Ajax in context of building financial websites and user authentication functionality
+* Code Institute walkthrough project ['I think therefore I blog'](https://github.com/Code-Institute-Solutions/Django3blog) - great sorece of information how to start Django project and how to move with project configuration
+* Bootstrap Examples. Pages for this project are based on [Dashboard](https://getbootstrap.com/docs/5.2/examples/dashboard/), [Cover](https://getbootstrap.com/docs/5.2/examples/cover/), [Sign-In](https://getbootstrap.com/docs/5.2/examples/sign-in/), as well as Bootstrap documentation.
+* [Chart.js](https://www.chartjs.org/docs/latest/) - provided base for project's charts for incomes and expenses
+* Django Testing from Code Institute ['Hello Django' Walkthrough project](https://learn.codeinstitute.net/courses/course-v1:CodeInstitute+FST101+2021_T1/courseware/dc049b343a9b474f8d75822c5fda1582/5666926980b74689b37a0d5da3cec510/)
+* Python Expense Tracker Project from [Data-Flair](https://data-flair.training/blogs/expense-tracker-python/) - explaining step by step how to implement charts, table, history of User's actions
+* Article [Creating a Budget Web App with Django](https://kristian-roopnarine.medium.com/creating-a-budget-web-app-with-django-655369b6d43c) - useful information about the models and functions implementation
+* [Colorib - Bootstrap Hamburger Menu Examples](https://colorlib.com/wp/bootstrap-hamburger-menu/) > Here I used [Menu Toggle Button](https://codepen.io/GeoffreyCrofte/full/nybYBm) for Login and Registration Page, and [Contact Form](https://preview.colorlib.com/theme/bootstrap/contact-form-16/)
+* [Codepen - Sliding Diagonals Background](https://codepen.io/chris22smith/pen/RZogMa) - for interesting background effect for Login and Registration page
+* [Article about User Stories by Anastasiia Kalachova](https://www.altamira.ai/blog/difference-between-epics-vs-user-stories/) - explaining difference between epics and user stories
+* [Freepik](https://www.freepik.com/) - beautiful free vector images from [Storyset](https://www.freepik.com/author/stories)
+* [Tutorial on contact forms functionality](https://www.youtube.com/watch?v=1ihn3iRXtsY&t=902s&ab_channel=djangotutorials) from Djangotutorials
+* Color pallete creator and contrast checker were from on [Coolors](https://coolors.co/)
+* The logo was created on [VistaCreate](https://create.vista.com/home/)
