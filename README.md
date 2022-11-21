@@ -378,3 +378,69 @@ After successful checkout User will see the Purchase Confirmation page:
 * Button visible on the bottom: Now let's check the other products, which brings the User to the All products page.
 * Information displayed on this page, can be viewed by the user under My Profile > Order History.
 
+<details> <summary> Error Pages: 500 and 404 </summary>
+<img src="https://story-sparks.s3.eu-west-1.amazonaws.com/media/404error.png">
+<img src="https://story-sparks.s3.eu-west-1.amazonaws.com/media/500error.png">
+</details>
+
+Project has custom error pages for 404 and 500 errors.
+* 404 error - Page not found - very common error. Added a custom error page to keep it user-friendly. It has a "Return to the homepage" button that takes the User to the main page back.
+* 500 error - Server error. Added a custom error page to keep it user-friendly. It has a "Return to the homepage" button that takes the User to the main page back.
+
+<details> <summary> My Profile and Order History </summary>
+<img src="https://story-sparks.s3.eu-west-1.amazonaws.com/media/my-profile.png">
+<img src="https://story-sparks.s3.eu-west-1.amazonaws.com/media/order-history.png">
+</details>
+
+When the User is logged in, they can access "My Profile" section from "My Account" icon on the top right side.
+* Left side of the page shows the saved information about delivery details, that can be edited at any time.
+* The user will receive a success message when the profile is updated.
+* Saved delivery information is used to autofill the Checkout form.
+* Right side of the profile page displays the order history.
+* Clicking on the order number will show the full order details and a toast message informing it's a past order information, as per screenshot provided.
+
+<details> <summary> Product Management </summary>
+<img src="https://story-sparks.s3.eu-west-1.amazonaws.com/media/confirmation.png">
+</details>
+
+Product Management page is available to superusers only.
+* When logged in as a superuser, "Product Management" is available from "My Account" icon on the top right side.
+* Product Management page displays a form, where superuser can add the products to the store.
+* The same form is used, when a superuser wants to update a product.
+
+<details> <summary> Shipping And Returns Q&A </summary>
+<img src="https://story-sparks.s3.eu-west-1.amazonaws.com/media/Q%26A.png">
+</details>
+
+Q&A page, where users can learn more about the Shipping and Returns procedures.
+* The page has a form of accordeon - to view the answer to the question regarding Shipping and Returns - User needs to click on the question, which will reveal the answer.
+* Important page, as it displays all the ionformation that customer might be looking for in case of receiving a faulty item or wanting to return the goods.
+
+<details> <summary> About Us </summary>
+<img src="https://story-sparks.s3.eu-west-1.amazonaws.com/media/aboutus.png">
+</details>
+
+About Us page displays the details about the Story Sparks creators - their photos, names, job title and additional information.
+* Each creator has a short description field explaining their role in Story Sparks Co. 
+* Page brings the User and creators closer - makes the purchase more personal, as the User knows who stands behind the brand.
+* When logged in as a superuser - additional buttons are availabe: "Add new creator", "Update creator" and "Delete creator".
+* "Add new creator" takes the superuser to a new page containing a form, which allows to add new members of Story Sparks Co. to the About Us page.
+
+<details> <summary> Contact Form </summary>
+<img src="https://story-sparks.s3.eu-west-1.amazonaws.com/media/contact-form.png">
+</details>
+
+Contact pagre allows the User to communicate with the Story Sparks Co. Team.
+* Page contains a form, where the user can choose the category: Submit a request or Ask a question and add their details.
+* Once the contact form is sent - the User receives a success message in the top right corner informing about successful submission.
+* In case of any error while sending the form - the user receives an error notification in the top right corner.
+
+## Future Features
+* Newsletter Management Panel for the superusers - send a newsletter based on the subscriptions email base.
+* Add more social media accounts.
+* Improve the pages design, add more eye-catching homepage elements.
+* Add the option for the user to save their name details, not only delivery information.
+* Add to the Wishlist option, which will save those items in the User's Profile.
+* Add the rating for the products.
+* Add more product categories - like accessories, wax melts, tealight sets.
+* Add a blog.
