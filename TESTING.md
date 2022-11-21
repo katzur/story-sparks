@@ -222,13 +222,14 @@ Superusers can delete exisiting team members of Story Sparks Co. in About Us sec
 
 # Validator Testing
 ## HTML
-All HTML pages were run through the [W3C HTML Validator](https://validator.w3.org/). See results in the table below.
+All HTML pages were run through the [W3C HTML Validator](https://validator.w3.org/). See results in the table below:
+
 | Page                           | Result     | 
 |--------------------------------|------------|
 | Home                           | No Errors  |
 | All Products                   | No Errors  |
-| Product Detail                 | No Errors  |
-| Search Result                  |            |
+| Product Detail                 | Note       |
+| Search Result                  | No Errors  |
 | Add Product                    | N/A        |
 | Edit Product                   | N/A        |
 | Confirm Delete Product         | N/A        |
@@ -241,19 +242,51 @@ All HTML pages were run through the [W3C HTML Validator](https://validator.w3.or
 | Contact                        | No Errors  |
 | Sign In                        | No Errors  |
 | Sign Up                        | No Errors  |
-| Log Out                        | N/A        |
+| Log Out                        | No Errors  |
 | Password Reset                 | No Errors  |
-| 404.html                       | No errors  |
-| 500.html                       | No errors  |
+| 404.html                       | N/A        |
+| 500.html                       | N/A        |
 | About Us                       |            |
 | Add Creator                    | N/A        |
 | Edit Creator                   | N/A        |
 | Confirm Delete Creator         | N/A        |
-| Returns & Shipping             |            |
+| Returns & Shipping             | No Errors  |
+
+Product Details - error related to additional </p> element.
+Based on the code for Product Details - no issues where seen in line 35.
 
 ## CSS
+No errors were found when passing CSS direct input through the [W3C CSS Validator](https://jigsaw.w3.org/css-validator/#validate_by_input)
+<details> <summary> Check the result of the test for base.css, checkout.css, profile.css </summary>
+<img src="https://story-sparks.s3.eu-west-1.amazonaws.com/media/css-validation.png">
+</details>
 
 ## JSHint
+All Javascript was passed through [JSHint](https://jshint.com/) with no issues.
+
+<details> <summary> Base </summary>
+<img src="https://story-sparks.s3.eu-west-1.amazonaws.com/media/base.html_js.png">
+</details>
+
+<details> <summary> Products </summary>
+<img src="https://story-sparks.s3.eu-west-1.amazonaws.com/media/products.html_js.png">
+</details>
+
+<details> <summary> Profile </summary>
+<img src="https://story-sparks.s3.eu-west-1.amazonaws.com/media/profile_js.png">
+</details>
+
+<details> <summary> Checkout </summary>
+<img src="https://story-sparks.s3.eu-west-1.amazonaws.com/media/checkout_js.png">
+</details>
+
+<details> <summary> Bag </summary>
+<img src="https://story-sparks.s3.eu-west-1.amazonaws.com/media/base.html_js.png">
+</details>
+
+<details> <summary> Product Quantity </summary>
+<img src="https://story-sparks.s3.eu-west-1.amazonaws.com/media/quantity_js.png">
+</details>
 
 ## Python Validation - Pycodestyle
 
