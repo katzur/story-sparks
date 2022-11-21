@@ -51,6 +51,9 @@ Users can browse and purchase a variety of candles in two sizes, as well as chec
 The payment system for the Story Sparks Co. store uses Stripe. Please note that this website is created for educational purposes. Do NOT enter any personal credit/debit card details when using the site. For more info how to test the site, please refer to [Stripe Testing Guidance](#stripe-testing-guidance).
 
 Story Sparks Co. is the final project of the Code Institute diploma in Fullstack Development with e-commerce applications.
+## Demo
+<img src="https://story-sparks.s3.eu-west-1.amazonaws.com/media/amiresponsive.png" />
+
 
 # UX
 ## Strategy
@@ -541,6 +544,14 @@ For this project I created a [Facebook page](https://www.facebook.com/storyspark
 # Testing
 Due to the size of the testing section, I created additional testing page.
 Please go to [TESTING.md](TESTING.md) for information on testing and validation.
+
+## Stripe Testing Guidance
+When testing site's payments, please use the following from [Stripe's testing documentation](https://stripe.com/docs/testing#cards):
+
+* Stripe test card number, such as 4242 4242 4242 4242.
+* Future expiry date, such as 04/24.
+* Any three-digit CVC, such as 242.
+
 
 # Deployment
 ## Forking The GitHub Repository
