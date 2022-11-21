@@ -94,6 +94,10 @@ hr {
 	color: #edede4;
 }
 
+#mc_embed_signup .asterisk {
+	color: #000!important;
+}
+
 /* -------------------------------- Shipping and returns card styling */
 
 .card-header {

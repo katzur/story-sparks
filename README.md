@@ -44,7 +44,7 @@
 
 # Introduction
 Story Sparks Co. is a B2C e-commerce store. 
-The site is targeted towards users who are interested in purchasing candles for themselves or looking for funny gifts for others. Labels on the products contain witty descriptions reflecting 21st cenyury lifestyle of young adults (aka Millennials).
+The site is targeted towards users who are interested in purchasing candles for themselves or looking for funny gifts for others. Labels on the products contain witty descriptions reflecting 21st century lifestyle of young adults (aka Millennials).
 
 Users can browse and purchase a variety of candles in two sizes, as well as check the special offers and search the candles based on the scent type. They can view the Shipping and Return information, Policies, information about the Story Sparks Co. Team. They can as well contact the Team trhough the contact form and add their emails for subscription purposes (supported by Mailchimp). 
 
@@ -93,7 +93,7 @@ Strong brand equals more customers, involved digital community and steady income
 2. As a Site User I can view individual product details so that I can identify the name, price, description, ingredients and product image.
 3. As a Site User I can easily view the total of my purchases at any time so that I can avoid spending too much and have a good overview of the current total.
 4. As a Site User I can easily register an account so that I can have a personal account and be able to view my profile information: saved address details and past order history.
-5. As a Site User I can easily log in an account so that I can access my personal account information,
+5. As a Site User I can easily log in an account so that I can access my personal account information.
 6. As a Site User I can easily log out of my account so that I can ensure no one else can see my personal account information and order history.
 7. As a Site User I can easily recover my password in case I forget it so that I can recover access to my account.
 8. As a Site User I can receive an email confirmation after registering so that I can verify that my account registration was successful.
