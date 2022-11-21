@@ -436,7 +436,7 @@ Contact pagre allows the User to communicate with the Story Sparks Co. Team.
 * In case of any error while sending the form - the user receives an error notification in the top right corner.
 
 ## Future Features
-* Newsletter Management Panel for the superusers - send a newsletter based on the subscriptions email base.
+* Newsletter Management Panel for the superusers - send a newsletter based on the subscriptions email collection in the database.
 * Add more social media accounts.
 * Improve the pages design, add more eye-catching homepage elements.
 * Add the option for the user to save their name details, not only delivery information.
@@ -444,3 +444,55 @@ Contact pagre allows the User to communicate with the Story Sparks Co. Team.
 * Add the rating for the products.
 * Add more product categories - like accessories, wax melts, tealight sets.
 * Add a blog.
+
+# Marketing Strategy Implementation
+A set of various marketing strategies was implemented for Story Sparks Co. SEO, Social Media Marketing with elements of Content Marketing, Email Marketing - all to ensure Story Sparks success in the Internet by creating visible and trusty online presence. Strong brand equals more customers, involved digital community and steady income.
+
+## Branding
+Consistent branding helps with dragging customer's attention and keeps the customers engagement on the high level, as they recognize the social media feed and can associate it with the store.
+Story Sparks Co. is aiming to keep it modern, funky and high quality to meet the needs of the Target Audience. 
+Storng branding helps to build the trust among customers, who are then more likely to make a purchase or recommed it to their close ones or opther people through the social media posts.
+
+## SEO
+Customers will most likely find Story Sparks Co. when using Google or other search engine. SEO is very important element to ensure that the page is visible, when search engines are in use:
+* I made sure that the content of the page, product descriptions, About Us section, Shipping and Returns Q&A are full of valuable information based on the keywords.
+* I ensure that HTML elements boosting CEO are in place: useful alt descriptions for the img elements, meta keyowrds content in the head element, strong elements and headings.
+* I added robots.txt file to allow search engine spiderbots to crawl the site and allow it to be ranked in search results. 
+* I added sitemap.xml to help the spiderbots to crawl the site faster and fetch all relevant content. 
+* The site has testimonials on the homepage, Privacy Policy and Terms & Conditions pages to boost the customer's trust and improve search engine rankings.
+
+## Keywords
+Keywords have been a consistent thread through all evolutions of search engines. I made sure that Story Sparks page is enriched with helpful informational content, which will allow Google to see it as worthy of a higher search ranking.
+I was aiming to find keywords that are high enough volume, but low enough competition to work for the Story Sparks.
+I used the [Wordtracker](https://www.wordtracker.com/) to check how much competition is there for my chosen keywords, as the page suggests also other related keywords.
+<details> <summary> Wordtracker results </summary>
+<img src="https://story-sparks.s3.eu-west-1.amazonaws.com/media/wordtracker.png">
+</details>
+
+* funny candles
+* scented candles
+* funny saying candles
+* gift ideas for millennials
+* candles for him
+* candles for her
+* funny gift candles
+* joke candles
+* fragnance oils candle
+* natural candles
+* organic candles
+* best natural candles
+* vegan candles
+
+## Newsletter
+One of the ways to implement Email Marketing is to use a Newsletter to share deals and information with the customers, who willingly sign up for it. 
+This helps the store to communicate directly with potential customers and, convince and encourage them to buy the products (coupons, deals, sales, promo codes).
+Anyone visiting the store (no need to be logged in User) can sign up to the newsletter by entering their email address and clicking the "Subscribe" button on in the footer section. 
+Newsletter for Story Sparks Co. was created by using the [Mailchimp](https://mailchimp.com/). 
+
+## Social media
+Social Media Marketing is a great way to become recognizable for the potential customers within the various social media platforms. It helps with tageting the selected audience, as different social media platforms are attractive to different age groups. Additionally it adds extra links for search engines, building the site's authenticity. 
+For this project I created a Facebook page that matches the store in its design.
+
+<details> <summary> Story Sparks Co. Facebook Page </summary>
+<img src="https://story-sparks.s3.eu-west-1.amazonaws.com/media/facebook.png">
+</details>
