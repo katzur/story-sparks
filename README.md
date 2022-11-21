@@ -517,20 +517,26 @@ For this project I created a [Facebook page](https://www.facebook.com/storyspark
 * Balsamiq - wireframes creation.
 * Diagram.net - user journey website diagram creation
 * DrawSQL - database models schema creation
+* Stripe - supporting store's payments
+* TempMail - used for testing purposes
 
-## Content
-* [E-wallet idea](https://pl.pinterest.com/pin/293859944448506091/) - found on Pinterest in design suggestions
-* Django tutorial series from [Cryce Truly](https://www.youtube.com/c/CryceTruly) - absolutely great content teaching basic Django and JavaScript/ Ajax in context of building financial websites and user authentication functionality
-* Code Institute walkthrough project ['I think therefore I blog'](https://github.com/Code-Institute-Solutions/Django3blog) - great sorece of information how to start Django project and how to move with project configuration
-* Bootstrap Examples. Pages for this project are based on [Dashboard](https://getbootstrap.com/docs/5.2/examples/dashboard/), [Cover](https://getbootstrap.com/docs/5.2/examples/cover/), [Sign-In](https://getbootstrap.com/docs/5.2/examples/sign-in/), as well as Bootstrap documentation.
-* [Chart.js](https://www.chartjs.org/docs/latest/) - provided base for project's charts for incomes and expenses
+# Content
+* Code Institute's Boutique Ado walkthrough project - base for the project and its functionality.
 * Django Testing from Code Institute ['Hello Django' Walkthrough project](https://learn.codeinstitute.net/courses/course-v1:CodeInstitute+FST101+2021_T1/courseware/dc049b343a9b474f8d75822c5fda1582/5666926980b74689b37a0d5da3cec510/)
-* Python Expense Tracker Project from [Data-Flair](https://data-flair.training/blogs/expense-tracker-python/) - explaining step by step how to implement charts, table, history of User's actions
-* Article [Creating a Budget Web App with Django](https://kristian-roopnarine.medium.com/creating-a-budget-web-app-with-django-655369b6d43c) - useful information about the models and functions implementation
-* [Colorib - Bootstrap Hamburger Menu Examples](https://colorlib.com/wp/bootstrap-hamburger-menu/) > Here I used [Menu Toggle Button](https://codepen.io/GeoffreyCrofte/full/nybYBm) for Login and Registration Page, and [Contact Form](https://preview.colorlib.com/theme/bootstrap/contact-form-16/)
-* [Codepen - Sliding Diagonals Background](https://codepen.io/chris22smith/pen/RZogMa) - for interesting background effect for Login and Registration page
-* [Article about User Stories by Anastasiia Kalachova](https://www.altamira.ai/blog/difference-between-epics-vs-user-stories/) - explaining difference between epics and user stories
-* [Freepik](https://www.freepik.com/) - beautiful free vector images from [Storyset](https://www.freepik.com/author/stories)
-* [Tutorial on contact forms functionality](https://www.youtube.com/watch?v=1ihn3iRXtsY&t=902s&ab_channel=djangotutorials) from Djangotutorials
 * Color pallete creator and contrast checker were from on [Coolors](https://coolors.co/)
-* The logo was created on [VistaCreate](https://create.vista.com/home/)
+* The collages were created on [VistaCreate](https://create.vista.com/home/)
+* [Pinterest]((https://www.pinterest.com/) - web design ideas. Color palette idea based on [this pin](https://pl.pinterest.com/pin/598767712973280418/)
+* [Printful](https://www.printful.com/custom-candles#create) and [Cortado.ie](https://www.contrado.ie/estore/design/) - creating product visualisations
+* [Pexels](https://www.pexels.com/) - images used for Story Sparks Co. About Us:
+    * [Image 1](https://www.pexels.com/photo/a-woman-smiling-at-the-camera-8271815/)
+    * [Image 2](https://www.pexels.com/photo/smiling-woman-with-burning-candle-at-home-5761126/)
+    * [Image 3](https://www.pexels.com/photo/woman-using-a-dropper-7234550/)
+    * [Image 4](https://www.pexels.com/photo/a-woman-working-from-home-7005399/)
+* [Code Lab](https://www.tutorialrepublic.com/codelab.php?topic=bootstrap&file=testimonial-carousel-with-quote-icon) - Bootstrap Testimonials section
+* [CSS Scan](https://getcssscan.com/css-box-shadow-examples) - CSS box-shadow examples to use
+* Code Pen - [navigation hover effects]((https://codepen.io/maheshambure21/pen/QwXaRw)) and [rounded side border radius for the order history](https://codepen.io/joeashworth/pen/PXvRzb)
+* [The Brandsmen](https://thebrandsmen.com/css-image-hover-effects/) - image hover effects
+* Inspiration from the other beautiful CI students projects: [Fresh Nest](https://fresh-nest.herokuapp.com/), [The Chocolate Factory](https://the-chocolate-factory.herokuapp.com/), [Dry Drops](https://dry-drops.herokuapp.com/), [Heiwa Gallery](https://heiwa-gallery.herokuapp.com/) Thank you all!
+
+
+
