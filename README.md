@@ -404,7 +404,7 @@ When the User is logged in, they can access "My Profile" section from "My Accoun
 * Clicking on the order number will show the full order details and a toast message informing it's a past order information, as per screenshot provided.
 
 <details> <summary> Product Management </summary>
-<img src="https://story-sparks.s3.eu-west-1.amazonaws.com/media/confirmation.png">
+<img src="https://story-sparks.s3.eu-west-1.amazonaws.com/media/product-management.png">
 </details>
 
 Product Management page is available to superusers only.
