@@ -217,6 +217,9 @@ Superusers can edit/ update exisiting team members of Story Sparks Co. in About 
 
 <details><summary>As a Site Admin I can delete a creator from About Us section so that I can remove people, who no longer work for Story Sparks Co.</summary>
 <img src="https://story-sparks.s3.eu-west-1.amazonaws.com/media/aboutus.png">
-<img src="https://story-sparks.s3.eu-west-1.amazonaws.com/media/update-creator.png">
 </details>
 Superusers can delete exisiting team members of Story Sparks Co. in About Us section. Once logged in as superuser in the About Us a new button appears "Delete creator". Once clicked - the exisiting entry will be deleted and new updated version of About Us will be available for the users.
+
+# Validator Testing
+## HTML
+All HTML pages were run through the [W3C HTML Validator](https://validator.w3.org/). See results in the table below.
