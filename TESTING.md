@@ -568,3 +568,34 @@ The page was tested using Chrome, Firefox, Safari and Edge browsers without any 
 | Order Confirmation                  | Display                         | Display Correct Order Details                                       | &check;   | 
 | Keep Shopping! button               | Click                           | Redirect to products page                                           | &check;   | 
 
+## My Profile
+
+| Element                | Action            | Expected Result                                                                                                                | Pass?     |
+|------------------------|-------------------|--------------------------------------------------------------------------------------------------------------------------------|-----------|
+| Open My Profile Page   | Access            | If a user tries to access the profile page (by changing the url) without being signed in they are redirected to the login page | &check;   |
+| Form fields            | On load           | Fields populated with user default info (if previously saved)                                                                  | &check;   |
+| All input fields       | Leave blank       | On submit: form submits                                                                                                        | &check;   |
+| All input fields       | Just whitespace   | On submit: form submits                                                                                                        | &check;   |
+| All input fields       | Fill in correctly | On submit: form submits                                                                                                        | &check;   |
+| Update button          | Click             | Form submits                                                                                                                   | &check;   |
+| Update button          | Click             | Success message appears confirming profile successfully updated                                                                | &check;   |
+| Order history number   | Click             | Redirect to previous order confirmation page for that order                                                                    | &check;   |
+| **Order History**      |                   |                                                                                                                                |           |
+| Information Display    | Display           | All previous order information displays correctly                                                                              | &check;   |
+| Toast                  | On load           | Previous order info toast appears                                                                                              | &check;   |
+| Back to Profile button | Click             | Redirect to profile page                                                                                                       | &check;   |
+
+## Contact
+
+| Element                       | Action                | Expected Result                                                                     | Pass?     |
+|-------------------------------|-----------------------|-------------------------------------------------------------------------------------|-----------|
+| Form Text Input (if required) | Leave blank           | On Submit: Warning appears, form won't submit                                       | &check;   |
+| Form Text Input (if required) | Just input whitespace | On Submit: Warning appears Form won't submit                                        | &check;   |
+| Email Input                   | Incorrect Format      | On Submit: Warning appears, form won't submit                                       | &check;   |
+| Inquiry Type Dropdown         | Click                 | Display all Inquiry Types to choose from                                            | &check;   |
+| Cancel button                 | Click                 | Redirect to Home page                                                               | &check;   |
+| Submit button(form valid)     | Click                 | Form submit                                                                         | &check;   |
+| Submit button(form valid)     | Click                 | Redirect to home Page                                                               | &check;   |
+| Submit button(form valid)     | Click                 | Success message appears informing the superuser that the enquiry has been submitted | &check;   |
+| Submit button(form valid)     | Click                 | User receives confirmation email about their enquiry                                | &check;   |
+
