@@ -495,3 +495,76 @@ The page was tested using Chrome, Firefox, Safari and Edge browsers without any 
 | Confirm Delete -  delete button | Click                 | Success message appears confirming product deleted successfully                                                            | &check;   |   
 
 
+## Bag
+
+| Element                                                       | Action              | Expected Result                                        | Pass?     |
+|---------------------------------------------------------------|---------------------|--------------------------------------------------------|-----------|
+| **No Items in the Bag**                                       |                     |                                                        |           |
+| Keep Shopping button                                          | Click               | Redirect to home decor page                            | &check;   |  
+| **Items in the Bag**                                          |                     |                                                        |           |
+| Qty control buttons                                           | Click               | Increase/decrease quantity                             | &check;   |  
+| Qty control buttons                                           | Click               | Minus button disabled if quantity is 1                 | &check;   |  
+| Qty control buttons                                           | Click               | Plus button disabled if quantity is 99                 | &check;   |  
+| Qty control buttons                                           | Manually Input  >99 | Error message appears when refresh button is clicked   | &check;   |  
+| Qty control buttons                                           | Manually Input  <1  | Shopping bag is emptied when refresh button is clicked | &check;   |  
+| Refresh Icon button                                           | Click               | Update bag item quantity                               | &check;   |  
+| Refresh Icon button                                           | Refresh Icon button | Updated confirmation toast appears                     | &check;   |  
+| Bin Icon button                                               | Click               | Remove item from bag                                   | &check;   |  
+| Bin Icon button                                               | Click               | Removed confirmation toast appears                     | &check;   |  
+| Line item subtotal / Bag total / Delivery cost / Grand Total  | Calculate           | All numbers are calculated correctly                   | &check;   |  
+| Continue shopping button                                      | Click               | Redirect to products page                              | &check;   |  
+| Secure Checkout button                                        | Click               | Redirect to checkout page                              | &check;   |  
+
+## Checkout
+
+| Element                             | Action                          | Expected Result                                                     | Pass?     |
+|-------------------------------------|---------------------------------|---------------------------------------------------------------------|-----------|
+| Checkout Page                       | Direct URL input (empty bag)    | Redirect to products page                                           | &check;   | 
+| Checkout Page                       | Direct URL input (empty bag)    | Empty bag toast appears                                             | &check;   | 
+| Form fields(if user logged in)      | On load                         | Fields populated with user default info (if previously saved)       | &check;   | 
+| Text Input(if required)             | Leave blank                     | On submit:form won't submit                                         | &check;   | 
+| Text Input(if required)             | Leave blank                     | Error message on invalid field(s)                                   | &check;   | 
+| Text Input(if required)             | Just whitespace                 | On submit:form won't submit                                         | &check;   | 
+| Text Input(if required)             | Just whitespace                 | Error message on invalid field(s)                                   | &check;   | 
+| Text Input(if required)             | Fill in correctly               | On submit: form submits                                             | &check;   | 
+| Phone number Input                  | Leave blank                     | On submit:form won't submit                                         | &check;   | 
+| Phone number Input                  | Leave blank                     | Error message on field                                              | &check;   | 
+| Phone number Input                  | Just whitespace                 | On submit:form won't submit                                         | &check;   | 
+| Phone number Input                  | Just whitespace                 | Error message on field                                              | &check;   | 
+| Phone number Input                  | Use non numeric characters      | On submit:form won't submit                                         | &check;   | 
+| Phone number Input                  | Use non numeric characters      | Error message on field                                              | &check;   | 
+| Email Input                         | Leave blank                     | On submit:form won't submit                                         | &check;   | 
+| Email Input                         | Leave blank                     | Error message on field                                              | &check;   | 
+| Email Input                         | Just whitespace                 | On submit:form won't submit                                         | &check;   | 
+| Email Input                         | Just whitespace                 | Error message on field                                              | &check;   | 
+| Email Input                         | Fill in correctly               | On submit: form submits                                             | &check;   | 
+| Save to profile checkbox            | On load(user logged in)         | Shown                                                               | &check;   | 
+| Save to profile checkbox            | On load(user not logged in)     | Not shown                                                           | &check;   | 
+| Save to profile checkbox            | Checked                         | On submit: Delivery information saved to user profile               | &check;   | 
+| Save to profile checkbox            | Unchecked                       | On submit: Delivery information not saved to user profile           | &check;   | 
+| Payment card input                  | Input invalid card number       | Error message on field                                              | &check;   | 
+| Payment card input                  | Input invalid date              | Error message on field                                              | &check;   | 
+| Adjust Bag button                   | Click                           | Redirect to bag page                                                | &check;   | 
+| Complete Order button(form invalid) | Click                           | Form won't submit                                                   | &check;   | 
+| Complete Order button(form invalid) | Click                           | Error message on invalid fields                                     | &check;   | 
+| Complete Order button(form valid)   | Payment succeeds                | Loading screen reappears                                            | &check;   | 
+| Complete Order button(form valid)   | Payment succeeds                | Form submits                                                        | &check;   | 
+| Complete Order button(form valid)   | Payment succeeds                | Redirect to order confirmation page                                 | &check;   | 
+| Complete Order button(form valid)   | (if user logged in)             | Order saved to user profile                                         | &check;   | 
+| Complete Order button(form valid)   | Payment failed                  | Loading animation appears                                           | &check;   | 
+| Complete Order button(form valid)   | Payment failed                  | Form won't submit                                                   | &check;   | 
+| Complete Order button(form valid)   | Payment failed                  | Error message at bottom of form                                     | &check;   | 
+| Complete Order button(form valid)   | Click                           | Success message appears confirming order successfully processed     | &check;   | 
+| Complete Order button(form valid)   | Payment Requires authentication | Authentication box appears                                          | &check;   | 
+| Fail Authentication button          | Click                           | Authentication box closes                                           | &check;   | 
+| Fail Authentication button          | Click                           | User directed back to form                                          | &check;   | 
+| Fail Authentication button          | Click                           | Error message at bottom of form                                     | &check;   | 
+| Complete Authentication button      | Click                           | Loading screen reappears                                            | &check;   | 
+| Complete Authentication button      | Click                           | Form submits                                                        | &check;   | 
+| Complete Authentication button      | Click                           | Redirect to order confirmation page                                 | &check;   | 
+| Complete Order button(form valid)   | Click                           | Success message appears confirming order successfully processed     | &check;   | 
+| Complete Order button(form valid)   | Click                           | User receives an order confirmation email with correct information  | &check;   | 
+| **Checkout Success Page**           |                                 |                                                                     |           |
+| Order Confirmation                  | Display                         | Display Correct Order Details                                       | &check;   | 
+| Keep Shopping! button               | Click                           | Redirect to products page                                           | &check;   | 
+
