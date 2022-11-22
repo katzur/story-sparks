@@ -393,7 +393,7 @@ The page was tested using Chrome, Firefox, Safari and Edge browsers without any 
 | Password field                  | Insert incorrect format/length            | Error message displays                       | &check;   |
 | Password field                  | Passwords don't match                     | On submit: form won't submit                 | &check;   |
 | Password field                  | Passwords don't match                     | Error message displays                       | &check;   |
-| Password field                  | Insert correct format and passwords match | On submit: form submit                       | &check;   |
+| Password field                  | Insert correct format + passwords match   | On submit: form submit                       | &check;   |
 | Sign Up button(form valid)      | Click                                     | Form submit                                  | &check;   |
 | Sign Up button(form valid)      | Click                                     | Redirect to Verify Email Address page        | &check;   |
 | Sign Up button(form valid)      | Click                                     | Alert message confirming email sent appears  | &check;   |
@@ -423,5 +423,75 @@ The page was tested using Chrome, Firefox, Safari and Edge browsers without any 
 | **Sign Out**                    |                                           |                                              |           |
 | Sign Out  button                | Click                                     | Redirect to homepage                         | &check;   |
 | Sign Out  button                | Click                                     | Success message confirming Sign Out  appears | &check;   |
+
+
+## All Products
+
+| Element                         | Action  | Expected Result                                                                                | Pass?     |
+|---------------------------------|---------|------------------------------------------------------------------------------------------------|-----------|
+| Sort By  Dropdown               | Click   | Open 'sort by' options                                                                         | &check;   |
+| Sort By  Options                | Click   | Re-order products correctly (alphabetically or by price)                                       | &check;   |
+| Product Name                    | Display | Displays correct name of products on page                                                      | &check;   |
+| Product Price                   | Display | Displays product price                                                                         | &check;   |
+| Product Details                 | Click   | Redirect to product detail page                                                                | &check;   |
+| If Searched Product             | Display | Only display products with search term in the product's name, description or ingredients       | &check;   |
+| If Searched Product             | Display | Display number of products found for searched product                                          | &check;   |
+| **Superuser logged in**         |         |                                                                                                |           |
+| Edit product link               | Click   | Redirect to edit product page                                                                  | &check;   |
+| Delete product link             | Click   | Delete the product                                                                             | &check;   |
+
+## Product Detail
+
+| Element                  | Action                    | Expected Result                                                                              | Pass?     |
+|--------------------------|---------------------------|----------------------------------------------------------------------------------------------|-----------|
+| Product Content          | Display                   | Display correct product image, name, price, product details and ingredients                  | &check;   |
+| Qty control buttons      | Click                     | Increase/decrease quantity                                                                   | &check;   |
+| Qty control buttons      | Click                     | Minus button disabled if quantity is 1                                                       | &check;   |
+| Qty control buttons      | Click                     | Plus button disabled if quantity is 99                                                       | &check;   |
+| Qty control buttons      | Manually Input  <1 or >99 | If quantity >99 or <1 manually entered, error message appears when Add to Bag button clicked | &check;   |
+| Keep Shopping button     | Click                     | Redirect to home decor page                                                                  | &check;   |
+| Add to bag button        | Click                     | Add item to bag                                                                              | &check;   |
+| Add to bag button        | Click                     | Toast Success appears                                                                        | &check;   |
+| Add to bag button        | Click                     | Product and quantity visible in toast success                                                | &check;   |
+| **Superuser logged in**  |                           |                                                                                              |           |
+| Edit product link        | Click                     | Redirect to edit product page                                                                | &check;   |
+| Delete product link      | Click                     | Delete the product                                                                           | &check;   |
+
+## Product Management 
+
+| Element                         | Action                | Expected Result                                                                                                            | Pass?     |
+|---------------------------------|-----------------------|----------------------------------------------------------------------------------------------------------------------------|-----------|
+| **Add Product**                 |                       |                                                                                                                            |           |
+| Add Product                     | Access                | If a user tries to add a product (by changing the url) without being signed in they are redirected to the login page       | &check;   |
+| Add Product                     | Access                | If a user tries to add a product (by changing the url) without being superuser they are redirected to a custom 403 page    | &check;   |
+| Form Text Input (if required)   | Leave blank           | On Submit: Warning appears, form won't submit                                                                              | &check;   |
+| Form Text Input (if required)   | Just input whitespace | On Submit: Form won't submit                                                                                               | &check;   |
+| Form image select button        | Click                 | Open device storage                                                                                                        | &check;   |
+| Form image select button        | Display               | Chosen image name displayed once selected                                                                                  | &check;   |
+| Form image select button        | Display               | Default image is used if no image is selected                                                                              | &check;   |
+| Cancel button                   | Click                 | Redirect to All Products page                                                                                              | &check;   |
+| Add Product button (form valid) | Click                 | Form submit                                                                                                                | &check;   |
+| Add Product button (form valid) | Click                 | Redirect to Product detail page for new product with all information displaying correctly                                  | &check;   |
+| Add Product button (form valid) | Click                 | Success message appears informing the superuser that the product has been added                                            | &check;   |
+|                                 |                       |                                                                                                                            |           |
+|                                 |                       |                                                                                                                            |           |
+| **Edit Product**                |                       |                                                                                                                            |           |
+| Edit Product                    | Access                | If a user tries to add a product (by changing the url) without being signed in they are redirected to the login page       | &check;   |
+| Edit Product                    | Access                | If a user tries to add a product (by changing the url) without being superuser they are redirected to a custom 403 page    | &check;   |
+| Edit Product Form               | Display               | Form has all the fields filled out with the original content                                                               | &check;   |
+| Edit Product Form               | Image Field           | Thumbnail of original image is shown                                                                                       | &check;   |
+| Form Text Input (if required)   | Leave blank           | On Submit: Warning appears, form won't submit                                                                              | &check;   |
+| Form Text Input (if required)   | Just input whitespace | On Submit: Form won't submit                                                                                               | &check;   |
+| Cancel button                   | Click                 | Redirect to All Products page                                                                                              | &check;   |
+| Submit button(form valid)       | Click                 | Form submit                                                                                                                | &check;   |
+| Edit Product button(form valid) | Click                 | Redirect to Product detail page for new product with all information displaying correctly                                  | &check;   |
+| Edit Product button(form valid) | Click                 | Success message appears informing the superuser that the product has been updated                                          | &check;   |
+|                                 |                       |                                                                                                                            |           |
+| **Confirm Delete Product**      |                       |                                                                                                                            |           |
+| Delete Product                  | Access                | If a user tries to Delete a product (by changing the url) without being signed in they are redirected to the login page    | &check;   |
+| Delete Product                  | Access                | If a user tries to Delete a product (by changing the url) without being superuser they are redirected to a custom 403 page | &check;   |
+| Confirm Delete -  cancel button | Click                 | Redirect to All Products page                                                                                              | &check;   |
+| Confirm Delete -  delete button | Click                 | Delete product                                                                                                             | &check;   |
+| Confirm Delete -  delete button | Click                 | Success message appears confirming product deleted successfully                                                            | &check;   |   
 
 
