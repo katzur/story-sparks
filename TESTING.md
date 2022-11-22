@@ -642,3 +642,61 @@ The page was tested using Chrome, Firefox, Safari and Edge browsers without any 
 | Confirm Delete -  delete button | Click                 | Delete creator                                                                                                             | &check;   |
 | Confirm Delete -  delete button | Click                 | Success message appears confirming creator was deleted successfully                                                        | &check;   |   
 
+# Fixed bugs
+
+**1. Search for categories and scents**
+
+Discovered that links in main-nav.html are case sensitive and must match exactly admin panel (e.g. Warm, not warm), otherwise it won't render the request and result will come back empty once selecting a specific category.
+<details> <summary> Issue screenshots </summary>
+<img src="https://story-sparks.s3.eu-west-1.amazonaws.com/media/issue1.png">
+<img src="https://story-sparks.s3.eu-west-1.amazonaws.com/media/issue1a.png">
+</details>
+
+**2. Adjust_bag and remove_from_bag views in bag views.py**
+
+Forgot to add 
+````
+product = get_object_or_404(Product, pk=item_id)
+````
+to adjust_bag and remove_from_bag views in bag views.py
+As a result when clicking on update or remove buttons in the bag - no changes were made and error 500 was written to the console. After adding the line on the top of the view functionality started to work as expected.
+<details> <summary> Issue screenshots </summary>
+<img src="https://story-sparks.s3.eu-west-1.amazonaws.com/media/issue2.png">
+<img src="https://story-sparks.s3.eu-west-1.amazonaws.com/media/issue2a.png">
+</details>
+
+
+**3. When running a local server 8000 media and static load as expected, but on deployed Heroku page there's an issue with missing images and css.**
+
+Cause of the issue - missing media processor in the settings.py:
+````
+django.template.context_processors.media
+````
+
+**4. Success toast**
+
+Every time a success message appeared (for adding a creator, submitting contact form etc.) and if the user had items in their shopping bag, 
+the success message would display the bag contents under the toast notification. Shopping bag content was unwanted element to display.
+Issue resolution - adding extra context into Django views using:
+````
+'get_context_data'
+````
+or set it up as
+````
+'on_profile_page': True
+````
+Thanks to that it was possible to add context to display only the toast message without bag content information for chosen views like add Creator, send a contact form.
+
+# Unfixed bugs
+
+**1. Carrousel with testimonials on the homepage changes its height when switching between the views**
+
+Problem is purely based on the size of the comments inside - there are 2 comments displayed on the same view - if one is vigger than the other on the next page - the hight will slightly drop/ increase while switching between the views.
+
+**2. Footer alignment on certain pages**
+
+Footer on certain pages tends to move up, leaving extra space on the bottom, even though code wise everything seems to be set up correctly.
+
+**3. When loggin in/ logging out the dropdowns are opening, but not able to click on the available links**
+
+It requires a page refresh, then all works as expected. Not sure about the root cause of this issue as it appears to happen for the Heroku deployment only.
