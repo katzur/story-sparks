@@ -288,7 +288,11 @@ All Javascript was passed through [JSHint](https://jshint.com/) with no issues.
 <img src="https://story-sparks.s3.eu-west-1.amazonaws.com/media/quantity_js.png">
 </details>
 
-## Python Validation - Pycodestyle
+## Python Validation - PEP8 and flake8
+For the Python testing I used [PEP8](https://pep8-checker.herokuapp.com/) and [flake8](https://pypi.org/project/flake8/) to check for any syntax errors.
+The errors found (please refer to the screenshot below) can be ignored, as they are automatically generated for the files related to env.py and webhooks.py.
+Formatting errors for env.py (not commited to GitHub) can be safely ignored, as they are based on the fact that Secret Keys and Database URLs are too long.
+
 
 ## Lighthouse
 
