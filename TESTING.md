@@ -15,6 +15,7 @@
 4. [Browser Testing](#browser-testing)
 5. [Manual Testing](#manual-testing)
 6. [Fixed Bugs](#fixed-bugs)
+7. [Responsiveness Testing](#responsiveness-testing)
 
 
 # User Story Testing
@@ -289,9 +290,16 @@ All Javascript was passed through [JSHint](https://jshint.com/) with no issues.
 </details>
 
 ## Python Validation - PEP8 and flake8
-For the Python testing I used [PEP8](https://pep8-checker.herokuapp.com/) and [flake8](https://pypi.org/project/flake8/) to check for any syntax errors.
-The errors found (please refer to the screenshot below) can be ignored, as they are automatically generated for the files related to env.py and webhooks.py.
-Formatting errors for env.py (not commited to GitHub) can be safely ignored, as they are based on the fact that Secret Keys and Database URLs are too long.
+For the Python testing I used PEP8 and [flake8](https://pypi.org/project/flake8/) to check for any syntax errors.
+The errors found (please refer to the screenshot below) can be ignored, as they are automatically generated files (such as migrations).
+Formatting errors for settings.py were ignored to not disrupt the settings functionality for AUTH_PASSWORD_VALIDATORS. 
+Imported but unused for empty test files, models and admin files were ignored as well, as they don't disrupt the fuctionality and are irrelevant.
+<details> <summary> flake8 </summary>
+<img src="https://story-sparks.s3.eu-west-1.amazonaws.com/media/flake1.png">
+<img src="https://story-sparks.s3.eu-west-1.amazonaws.com/media/flake2.png">
+<img src="https://story-sparks.s3.eu-west-1.amazonaws.com/media/flake3.png">
+<img src="https://story-sparks.s3.eu-west-1.amazonaws.com/media/flake4.png">
+</details>
 
 
 ## Lighthouse
@@ -299,9 +307,121 @@ Formatting errors for env.py (not commited to GitHub) can be safely ignored, as 
 # Device Testing
 The store pages were viewed and tested on a variety of devices such as Desktop, Large Desktop, Laptop 13", iPhone 13mini, iPhoneX and iPad to ensure responsiveness on different screen sizes. 
 The page performed as expected. The responsive design was also checked using Chrome Developer Tools across multiple devices. Additionally it was tested thorugh [Am I Responsive?](https://ui.dev/amiresponsive) to provide a demo.
+<details> <summary> Am I Responsive Demo </summary>
+<img src="https://story-sparks.s3.eu-west-1.amazonaws.com/media/amiresponsive.png">
+</details>
+
 
 # Browser Testing
 The page was tested using Chrome, Firefox, Safari and Edge browsers without any issues.
 
 # Manual Testing
 ## Site Navigation
+| Element                          | Action                        | Expected Result                                              | Pass?     |
+|----------------------------------|-------------------------------|--------------------------------------------------------------|-----------|
+| **Header**                       |                               |                                                              |           |
+| Site Name (logo area)            | Click                         | Redirect to home                                             | &check;   |
+| Search Box Function              | Enter Text and Click Search   | Search in the product's name, description and ingredients    | &check;   |
+| My Account Dropdown              | Click                         | Open profile dropdown                                        | &check;   |
+| Sign Up Link                     | Click                         | Redirect to Sign Up page (for not logged in users)           | &check;   |
+| Login Link                       | Click                         | Redirect to login page (for not logged in users)             | &check;   |
+| Product Management               | Click                         | Opens add new product page                                   | &check;   |
+| My Profile                       | Click                         | Opens new page to manage user account and view the history   | &check;   |
+| Logout                           | Click                         | Log out from their account - redirect to check out page      | &check;   |
+| Cart                             | Click                         | Redirects to the Shopping Bag Page and displays total cost   | &check;   |
+| **Navbar**                       |                               |                                                              |           |
+| All Candle Types                 | Click                         | Opens dropdown with categories                               | &check;   |
+| All Products                     | Click                         | Redirect all products page                                   | &check;   |
+| Jars                             | Click                         | Redirects to page filtered to jar category                   | &check;   |
+| Tins                             | Click                         | Redirects to page filtered to tin category                   | &check;   |
+| Special Offers                   | Click                         | Redirects to page filtered to special offers category        | &check;   |
+| Scents                           | Click                         | Opens dropdown with available scent types                    | &check;   |
+| Sweet and fruity                 | Click                         | Redirects to page filtered to sweet and fruity scents        | &check;   |
+| Warm and deep                    | Click                         | Redirects to page filtered to warm and deep scents           | &check;   |
+| Floral                           | Click                         | Redirects to page filtered to floral scents                  | &check;   |
+| Fresh                            | Click                         | Redirects to page filtered to fresh scents                   | &check;   |
+| Autumn Spices                    | Click                         | Redirects to page filtered to autumn spices scents           | &check;   |
+| About & Contact                  | Click                         | Opens dropdown with About Us, Contact and Shipping Q&A       | &check;   |
+| About Us                         | Click                         | Opens page with creators information                         | &check;   |
+| Contact                          | Click                         | Opens page with comntact form                                | &check;   |
+| Shipping and Returns             | Click                         | Opens page with shipping and returns q&a                     | &check;   |
+| **Mobile Top Header**            |                               |                                                              |           |
+| Search Icon Button               | Click                         | Open up search box                                           | &check;   |
+| Search Box Function              | Enter Text and Click Search   | Search both the product's name, description and ingredients  | &check;   |
+| My Account Dropdown              | Click                         | Open profile dropdown                                        | &check;   |
+| Sign Up Link                     | Click                         | Redirect to Sign Up page (for not logged in users)           | &check;   |
+| Login Link                       | Click                         | Redirect to login page (for not logged in users)             | &check;   |
+| Product Management               | Click                         | Opens add new product page                                   | &check;   |
+| My Profile                       | Click                         | Opens new page to manage user account and view the history   | &check;   |
+| Logout                           | Click                         | Log out from their account - redirect to check out page      | &check;   |
+| Cart                             | Click                         | Redirects to the Shopping Bag Page and displays total cost   | &check;   | 
+| Hamburger Menu                   | Responsive                    | Display when screen size reduces to medium size              | &check;   | 
+| Home Link                        | Click                         | Redirect to home                                             | &check;   | 
+| **Footer**                       |                               |                                                              |           |
+| Social Media Icon Links          | Click                         | Open correct location in new tab                             | &check;   | 
+| Newsletter Email field           | Insert incorrect/empty format | On submit: form won't submit                                 | &check;   | 
+| Newsletter Email field           | Insert incorrect/empty format | Error message displays                                       | &check;   | 
+| Subscribe Button                 | Click                         | Form submit                                                  | &check;   | 
+| Subscribe Button                 | Click                         | Message appears saying Thank You for subscribing!            | &check;   | 
+| All Products Link                | Click                         | Open All Products Page                                       | &check;   |
+| About Us Link                    | Click                         | Open About Us Page                                           | &check;   |
+| Contact Link                     | Click                         | Open Contact Page                                            | &check;   |
+| Shipping and Returns Link        | Click                         | Open Shipping and Returns Page                               | &check;   |
+| Privacy Policy Link              | Click                         | Open Privacy Policy Page in new tab                          | &check;   |
+| Terms & Conditions Links         | Click                         | Open Terms & Conditions in new tab                           | &check;   |
+
+## Allauth Pages 
+
+| Element                         | Action                                    | Expected Result                              | Pass?     |
+|---------------------------------|-------------------------------------------|----------------------------------------------|-----------|
+| **Sign Up**                     |                                           |                                              |           |
+| Sign in link                    | Click                                     | Redirect to sign in page                     | &check;   |
+| Email field                     | Insert incorrect format                   | On submit: form won't submit                 | &check;   |
+| Email field                     | Insert incorrect format                   | Error message displays                       | &check;   |
+| Email field                     | Insert correct format                     | On submit: form submit                       | &check;   |
+| Email field                     | Leave empty                               | On submit: form won't submit                 | &check;   |
+| Email field                     | Insert duplicate email                    | On submit: form won't submit                 | &check;   |
+| Email field                     | Insert duplicate email                    | Error message displays                       | &check;   |
+| Email Confirmation field        | Insert different email                    | On submit: form won't submit                 | &check;   |
+| Email Confirmation field        | Insert different email                    | Error message displays                       | &check;   |
+| Username field                  | Leave empty/incorrect format              | On submit: form won't submit                 | &check;   |
+| Username field                  | Leave empty/incorrect format              | Error message displays                       | &check;   |
+| Username field                  | Insert correct format                     | On submit: form submit                       | &check;   |
+| Username field                  | Insert duplicate username                 | On submit: form won't submit                 | &check;   |
+| Username field                  | Insert duplicate username                 | Error message displays                       | &check;   |
+| Password field                  | Insert incorrect format/length            | On submit: form won't submit                 | &check;   |
+| Password field                  | Insert incorrect format/length            | Error message displays                       | &check;   |
+| Password field                  | Passwords don't match                     | On submit: form won't submit                 | &check;   |
+| Password field                  | Passwords don't match                     | Error message displays                       | &check;   |
+| Password field                  | Insert correct format and passwords match | On submit: form submit                       | &check;   |
+| Sign Up button(form valid)      | Click                                     | Form submit                                  | &check;   |
+| Sign Up button(form valid)      | Click                                     | Redirect to Verify Email Address page        | &check;   |
+| Sign Up button(form valid)      | Click                                     | Alert message confirming email sent appears  | &check;   |
+| Confirmation Email Confirm Link | Click                                     | Open Confirm Email Address Page              | &check;   |
+| Confirm Button                  | Click                                     | Success message confirming new user appears  | &check;   |
+| Confirm Button                  | Click                                     | Redirect to sign in page                     | &check;   |
+|                                 |                                           |                                              |           |
+| **Log in**                      |                                           |                                              |           |
+| Sign up link                    | Click                                     | Redirect to sign up page                     | &check;   |
+| Username field                  | Leave empty                               | On submit: form won't submit                 | &check;   |
+| Username field                  | Leave empty                               | Error message displays                       | &check;   |
+| Username field                  | Insert wrong username                     | On submit: form won't submit                 | &check;   |
+| Username field                  | Insert wrong username                     | Error message displays                       | &check;   |
+| Password field                  | Leave empty                               | On submit: form won't submit                 | &check;   |
+| Password field                  | Leave empty                               | Error message displays                       | &check;   |
+| Password field                  | Insert wrong password                     | On submit: form won't submit                 | &check;   |
+| Password field                  | Insert wrong password                     | Error message displays                       | &check;   |
+| Login button(form valid)        | Click                                     | Form submit                                  | &check;   |
+| Login button(form valid)        | Click                                     | Redirect to home page                        | &check;   |
+| Login button(form valid)        | Click                                     | Success message confirming login appears     | &check;   |
+| Forgot Password Link            | Click                                     | Redirect to Password Reset page              | &check;   |
+| Email field                     | Leave empty/incorrect format              | On submit: form submit                       | &check;   |
+| Reset My Password Button        | Click                                     | Confirmation message that email sent         | &check;   |
+| Password Reset Email Link       | Click                                     | Open Change Password Page                    | &check;   |
+| Change Password Button          | Click                                     | Success message confirming Password Changed  | &check;   |
+|                                 |                                           |                                              |           |
+| **Sign Out**                    |                                           |                                              |           |
+| Sign Out  button                | Click                                     | Redirect to homepage                         | &check;   |
+| Sign Out  button                | Click                                     | Success message confirming Sign Out  appears | &check;   |
+
+
