@@ -599,3 +599,46 @@ The page was tested using Chrome, Firefox, Safari and Edge browsers without any 
 | Submit button(form valid)     | Click                 | Success message appears informing the superuser that the enquiry has been submitted | &check;   |
 | Submit button(form valid)     | Click                 | User receives confirmation email about their enquiry                                | &check;   |
 
+## About Us
+
+| Element                  | Action                    | Expected Result                                                                              | Pass?     |
+|--------------------------|---------------------------|----------------------------------------------------------------------------------------------|-----------|
+| Creators Content         | Display                   | Display correct creators info: image, name, job, details                                     | &check;   |
+| Image hover              | Hover                     | Change from B&W to color                                                                     | &check;   |
+| **Superuser logged in**  |                           |                                                                                              |           |
+| Edit creator button      | Click                     | Redirect to edit creator page                                                                | &check;   |
+| Delete creator button    | Click                     | Delete the creator                                                                           | &check;   |
+| Add new creator button   | Click                     | Redirect to add new creator page form                                                        | &check;   |
+
+## Creator Management 
+
+| Element                         | Action                | Expected Result                                                                                                            | Pass?     |
+|---------------------------------|-----------------------|----------------------------------------------------------------------------------------------------------------------------|-----------|
+| **Add Creator**                 |                       |                                                                                                                            |           |
+| Add Creator Form                | Display               | Form has all the fields ready to populate: name, job, description, image                                                   | &check;   |
+| Form Text Input (if required)   | Leave blank           | On Submit: Warning appears, form won't submit                                                                              | &check;   |
+| Form Text Input (if required)   | Just input whitespace | On Submit: Form won't submit                                                                                               | &check;   |
+| Form image select button        | Click                 | Open device storage                                                                                                        | &check;   |
+| Form image select button        | Display               | Chosen image name displayed once selected                                                                                  | &check;   |
+| Form image select button        | Display               | Default image is used if no image is selected                                                                              | &check;   |
+| Cancel button                   | Click                 | Redirect to About Us page                                                                                                  | &check;   |
+| Add Creator (form valid)        | Click                 | Form submit                                                                                                                | &check;   |
+| Add Creator (form valid)        | Click                 | Redirect to About Us page for new creator with all information displaying correctly                                        | &check;   |
+| Add Creator button (form valid) | Click                 | Success message appears informing the superuser that the creator has been added                                            | &check;   |
+|                                 |                       |                                                                                                                            |           |
+|                                 |                       |                                                                                                                            |           |
+| **Edit Creator**                |                       |                                                                                                                            |           |
+| Edit Creator Form               | Display               | Form has all the fields filled out with the original content                                                               | &check;   |
+| Edit Creator Form               | Image Field           | Thumbnail of original image is shown                                                                                       | &check;   |
+| Form Text Input (if required)   | Leave blank           | On Submit: Warning appears, form won't submit                                                                              | &check;   |
+| Form Text Input (if required)   | Just input whitespace | On Submit: Form won't submit                                                                                               | &check;   |
+| Cancel button                   | Click                 | Redirect to About Us page                                                                                                  | &check;   |
+| Submit button(form valid)       | Click                 | Form submit                                                                                                                | &check;   |
+| Edit Creator button(form valid) | Click                 | Redirect to About Us page for new creator with all information displaying correctly                                        | &check;   |
+| Edit Creator button(form valid) | Click                 | Success message appears informing the superuser that the creator has been updated                                          | &check;   |
+|                                 |                       |                                                                                                                            |           |
+| **Delete Creator**              |                       |                                                                                                                            |           |
+| Confirm Delete -  cancel button | Click                 | Redirect to About Us page                                                                                                  | &check;   |
+| Confirm Delete -  delete button | Click                 | Delete creator                                                                                                             | &check;   |
+| Confirm Delete -  delete button | Click                 | Success message appears confirming creator was deleted successfully                                                        | &check;   |   
+
