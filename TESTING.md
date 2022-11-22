@@ -9,13 +9,14 @@
     * [HTML](#html)
     * [CSS](#css)
     * [JSHint](#jshint)
-    * [Python Validation - Pycodestyle](#python-validation---pycodestyle)
+    * [Python Validation](#python-validation)
     * [Lighthouse](#lighthouse)
 3. [Device Testing](#device-testing)
 4. [Browser Testing](#browser-testing)
 5. [Manual Testing](#manual-testing)
 6. [Fixed Bugs](#fixed-bugs)
-7. [Responsiveness Testing](#responsiveness-testing)
+7. [Unfixed Bugs](#unfixed-bugs)
+8. [Responsiveness Testing](#responsiveness-testing)
 
 
 # User Story Testing
@@ -289,7 +290,7 @@ All Javascript was passed through [JSHint](https://jshint.com/) with no issues.
 <img src="https://story-sparks.s3.eu-west-1.amazonaws.com/media/quantity_js.png">
 </details>
 
-## Python Validation - PEP8 and flake8
+## Python Validation
 For the Python testing I used PEP8 and [flake8](https://pypi.org/project/flake8/) to check for any syntax errors.
 The errors found (please refer to the screenshot below) can be ignored, as they are automatically generated files (such as migrations).
 Formatting errors for settings.py were ignored to not disrupt the settings functionality for AUTH_PASSWORD_VALIDATORS. 
@@ -700,3 +701,40 @@ Footer on certain pages tends to move up, leaving extra space on the bottom, eve
 **3. When loggin in/ logging out the dropdowns are opening, but not able to click on the available links**
 
 It requires a page refresh, then all works as expected. Not sure about the root cause of this issue as it appears to happen for the Heroku deployment only.
+
+# Responsiveness Test
+<details> <summary> Home </summary>
+<img src="https://story-sparks.s3.eu-west-1.amazonaws.com/media/home-responsive.png">
+</details>
+
+<details> <summary> Bag </summary>
+<img src="https://story-sparks.s3.eu-west-1.amazonaws.com/media/bag-responsive.png">
+</details>
+
+<details> <summary> Contact </summary>
+<img src="https://story-sparks.s3.eu-west-1.amazonaws.com/media/contact-responsive.png">
+</details>
+
+<details> <summary> Products All </summary>
+<img src="https://story-sparks.s3.eu-west-1.amazonaws.com/media/products-responsive.png">
+</details>
+
+<details> <summary> Product Details </summary>
+<img src="https://story-sparks.s3.eu-west-1.amazonaws.com/media/details-responsive.png">
+</details>
+
+<details> <summary> Checkout </summary>
+<img src="https://story-sparks.s3.eu-west-1.amazonaws.com/media/checkout-responsive.png">
+</details>
+
+<details> <summary> Product Management </summary>
+<img src="https://story-sparks.s3.eu-west-1.amazonaws.com/media/productmanagement-responsive.png">
+</details>
+
+<details> <summary> My Profile </summary>
+<img src="https://story-sparks.s3.eu-west-1.amazonaws.com/media/profile-responsive.png">
+</details>
+
+<details> <summary> Shipping and Returns </summary>
+<img src="https://story-sparks.s3.eu-west-1.amazonaws.com/media/shipping-responsive.png">
+</details>
