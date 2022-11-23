@@ -688,6 +688,35 @@ or set it up as
 ````
 Thanks to that it was possible to add context to display only the toast message without bag content information for chosen views like add Creator, send a contact form.
 
+**5. Sending emails - smtp**
+
+When attempting to send emails to the users, who are trying to sign up or purchasing products - no real emails were sent. 
+The cause of this issue was that in settings.py DEBUG = 'DEVELOPMENT' instead of 'False'. Additionally in Heroku Config Vars DEVELOPMENT was set up to TRUE.
+After changing DEBUG = False and deleting DEVELOPMENT config var from Heroku settings for the app - all emails are now sent as expected.
+
+**6. ElephantSQL Database issue - apps not recognized. Error 500**
+
+After the initial migration to ElephantSQL two new apps were created: contact and creators. Whenever trying to send a contact form or access About Us section - error 500 was seen on the deployed site.
+Locally, while running the project using port 8000 all worked as expected.
+The issue behid it was that env.py file was missing on the project level, containing information:
+````
+import os
+
+os.environ['DATABASE_URL'] = <url of the ElephantSQL database>
+````
+
+as well as settings.py was missing configuration for it:
+````
+if os.path.isfile("env.py"):
+    import env
+````
+After applying those changes and performing migration:
+````
+python3 manage.py makemigrations
+python3 manage.py migrate
+````
+all started working as expected.
+
 # Unfixed bugs
 
 **1. Carrousel with testimonials on the homepage changes its height when switching between the views**
