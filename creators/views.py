@@ -17,6 +17,11 @@ class Creators(generic.ListView):
     context_object_name = "creators"
     template_name = "creators/creators.html"
 
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        context['on_profile_page'] = True
+        return context
+
 
 class AddCreator(
     UserPassesTestMixin, SuccessMessageMixin, generic.CreateView
@@ -52,7 +57,7 @@ class AddCreator(
         """
         messages.error(
             self.request,
-            "Oops, something went wrong! Please double-check the form.",
+            "Whops, something went wrong! Please double-check the form.",
         )
         return super().form_invalid(form)
 
