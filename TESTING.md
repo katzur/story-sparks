@@ -717,6 +717,23 @@ python3 manage.py migrate
 ````
 all started working as expected.
 
+**7. Sending emails as [example.com]**
+
+When sending emails to the customers (with confirmation links, order details etc.) emails had "example.com" in the email title as per screenshot below.
+
+<details> <summary> Issue screenshot </summary>
+<img src="https://story-sparks.s3.eu-west-1.amazonaws.com/media/example-issue.png">
+</details>
+
+After further research it turned out that this information is based on the SITE_ID value declaired in settings.py. In the Django admin panel under the Sites section example.com was the only site decaired.
+There were two solutions to this issue:
+* edit example.com to any other domain name and display name
+* add a new site with different set of information regarding domain and display name. Then SITE_ID would need th be switched accordingly, e.g. SITE_ID = 2.
+
+<details> <summary> Resolved screenshot </summary>
+<img src="https://story-sparks.s3.eu-west-1.amazonaws.com/media/example-solution.png">
+</details>
+
 # Unfixed bugs
 
 **1. Carrousel with testimonials on the homepage changes its height when switching between the views**
