@@ -36,8 +36,8 @@
     <!-- Products tiles -->
     <!-- First -->
     <div class="col-12 col-md-4 text-center pt-5 px-auto tiles" style="background: #b4b8ab;">
-        <h2>Our Candles</h2>
-        <a href="{% url 'products' %}" class="btn btn-outline-dark rounded-0 py-2 m-3 theme-btn">Shop Now</a>
+        <h2>Our Jars</h2>
+        <a href="{% url 'products' %}?category=Jar" class="btn btn-outline-dark rounded-0 py-2 m-3 theme-btn">Shop Now</a>
         <div class="home-product">
             <img width="300" class="d-none d-lg-inline" src="{{ MEDIA_URL }}basic.png" alt="Basic Candle jar">
             <img width="270" class="d-lg-none" src="{{ MEDIA_URL }}basic.png" alt="Basic Candle jar">
@@ -45,17 +45,17 @@
     </div>
     <!-- Second -->
     <div class="col-12 col-md-4 text-center pt-5 px-auto tiles" style="background: #f4ceb5;">
-        <h2>Scents</h2>
-        <a href="{% url 'products' %}?scent=Warm" class="btn btn-outline-dark rounded-0 py-2 m-3 theme-btn">Shop Now</a>
+        <h2>Our Tins</h2>
+        <a href="{% url 'products' %}?category=Tin" class="btn btn-outline-dark rounded-0 py-2 m-3 theme-btn">Shop Now</a>
         <div class="home-product">
-            <img width="300" class="d-none d-lg-inline" src="{{ MEDIA_URL }}coffee-break.png" alt="Coffee break candle jar">
-            <img width="270" class="d-lg-none" src="{{ MEDIA_URL }}coffee-break.png" alt="Coffee break candle jar">
+            <img width="300" class="d-none d-lg-inline" src="{{ MEDIA_URL }}happy-hour-tin.png" alt="Happy Hour candle tin">
+            <img width="270" class="d-lg-none" src="{{ MEDIA_URL }}happy-hour-tin.png" alt="Happy Hour candle tin">
         </div>
     </div>
     <!-- Third -->
     <div class="col-12 col-md-4 text-center pt-5 px-auto tiles" style="background: #c8d1ca;">
-        <h2>Special Offers</h2>
-        <a href="" class="btn btn-outline-dark rounded-0 py-2 m-3 theme-btn">Shop Now</a>
+        <h2>Bundles</h2>
+        <a href="{% url 'products' %}?category=Bundles" class="btn btn-outline-dark rounded-0 py-2 m-3 theme-btn">Shop Now</a>
         <div class="home-product">
             <img width="300" class="d-none d-lg-inline" src="{{ MEDIA_URL }}hot-mess.png" alt="Hot mess candle jar">
             <img width="270" class="d-lg-none" src="{{ MEDIA_URL }}hot-mess.png" alt="Hot mess candle jar">
@@ -170,6 +170,7 @@
 <!-- End testimonials -->
 
 <!-- More about product/ us reference -->
+
 <div class="row align-items-center py-7" style="background: #f5dec9; box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;">
     <div class="col-12 col-md-6 p-5 order-lg-first">
         <h2 class="display-5">Designing <strong>stories</strong> with a <strong>spark</strong></h2>
@@ -181,9 +182,10 @@
     </div>
     <div class="col-12 col-md-6 order-first d-flex justify-content-center">
         <img src="{{ MEDIA_URL }}tins-collage.png" alt="Tins candles collage" class="img-fluid"
-            width="500">
+            width="600">
     </div>
 </div>
+
 
 <!-- Instagram -->
 <div class="col text-center py-7 pt-5 pb-3" style="background: #ead1a0; text-align: center; box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 90px;">
