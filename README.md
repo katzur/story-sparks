@@ -46,11 +46,11 @@
 Story Sparks Co. is a B2C e-commerce store. 
 The site is targeted towards users who are interested in purchasing candles for themselves or looking for funny gifts for others. Labels on the products contain witty descriptions reflecting 21st century lifestyle of young adults (aka Millennials).
 
-Users can browse and purchase a variety of candles in two sizes, as well as check the special offers and search the candles based on the scent type. They can view the Shipping and Return information, Policies, information about the Story Sparks Co. Team. They can as well contact the Team trhough the contact form and add their emails for subscription purposes (supported by Mailchimp). 
+Users can browse and purchase a variety of candles in two sizes, as well as check the special offers and search the candles based on the scent type. They can view the Shipping and Return information, Policies, information about the Story Sparks Co. Team. They can as well contact the Team through the contact form and add their emails for subscription purposes (supported by Mailchimp). 
 
 The payment system for the Story Sparks Co. store uses Stripe. Please note that this website is created for educational purposes. Do NOT enter any personal credit/debit card details when using the site. For more info how to test the site, please refer to [Stripe Testing Guidance](#stripe-testing-guidance).
 
-Story Sparks Co. is the final project of the Code Institute diploma in Fullstack Development with e-commerce applications.
+Story Sparks Co. is the final project of the Code Institute diploma in Full Stack Development with e-commerce applications.
 ## Demo
 <img src="https://story-sparks.s3.eu-west-1.amazonaws.com/media/amiresponsive.png" />
 
@@ -58,25 +58,27 @@ Story Sparks Co. is the final project of the Code Institute diploma in Fullstack
 # UX
 ## Strategy
 ### The Issue
-When browsing in the Internet to find more about the candle industry, I noticed that the market is covered in mass-production, low quality candles with generic scents. Big brands have the monopol and sell their products in every
-online store with home decor. But the consumers are looking for variety, affordable prices and quality in their candles, as well as someting that would stand out. The trend of supporting local, small companies and artists is growing stronger and more creative companies should show their craft mastery on the market to give big brands solid competition.
+When browsing in the Internet to find more about the candle industry, I noticed that the market is covered in mass-production, low quality candles with generic scents. Big brands have the monopoly and sell their products in every
+online store with home decor. But the consumers are looking for variety, affordable prices and quality in their candles, as well as something that would stand out. The trend of supporting local, small companies and artists is growing stronger and more creative companies should show their craft mastery on the market to give big brands solid competition.
 
 ### The Vision
 Story Sparks Co. was created as a response to the current retail needs described above. The vision behind creating this store was focused on delivering a User an option to purchase something extraordinary, not currently seen on the
-candle market. No matter if the User is looking to purchase a candle to treat themselves, or a unique gift, that will bring a smile on loved one's face - Story Sparks delivers. Those are inteligent, funny candles that reflect and 
-comment our current lifestyle. The scents offered are unique and present a strong opposition to what big brands produce commonly. Uniqueness is Story Spark's strenght and might be an inspiration for other small brands that are looking
+candle market. No matter if the User is looking to purchase a candle to treat themselves, or a unique gift, that will bring a smile on loved one's face - Story Sparks delivers. Those are intelligent, funny candles that reflect and 
+comment our current lifestyle. The scents offered are unique and present a strong opposition to what big brands produce commonly. Uniqueness is Story Spark's strength and might be an inspiration for other small brands that are looking
 for their way to start operating on the online market.
 
 Store is easy and clear to navigate, based on the principle of "mobile first approach", which gives the freedom of using it on any type of device due to its full responsiveness. The aim was to provide all the main, necessary features expected for an e-commerce store.
 
 ### Target Audience
 Consumers that appreciate high-quality, handmade candles with unique scents and labels. Story Sparks Co. ensures to use only natural ingredients and supports zero-waste movement, as the jars and tins can be re-used for other purposes. 
-No plastic, no worries. Story Sparks Co. labels contain witty comments on our 21st century lifestyle, hence the target audience will be mainly young adults (aka Millenialls), who can identify themselves with words written on the candles. Other Users in different age groups will find Story Sparks Co. attractive as well, since it's a great place to purchase candles as a gift for the loved ones, who might be in a young adults age group. By implementing modern design, intuitive navigation and simple images Story Sparks Co. is aspiring to be a store suitable for all the age groups.
+No plastic, no worries. Story Sparks Co. labels contain witty comments on our 21st century lifestyle, hence the target audience will be mainly young adults (aka Millennials), who can identify themselves with words written on the candles. Other Users in different age groups will find Story Sparks Co. attractive as well, since it's a great place to purchase candles as a gift for the loved ones, who might be in a young adults age group. By implementing modern design, intuitive navigation and simple images Story Sparks Co. is aspiring to be a store suitable for all the age groups.
 
 ### Personas
 Ana, 32, single. Works in IT sector, since COVID fully remotely. Over the last 3 years she discovered many new small brands online that are a great alternative to environmental exploiting corporations and deliver their products to her doorstep. She noticed she can make a difference as a knowledgeable, conscious consumer, who cares about the planet condition. Since the COVID she spends more money online, and likes funny, jokey items that brighten her apartment.
 
-Monica and Chandler, 58 and 60, married couple. They're parents of two daughters in their late 20s. When looking for Christmas gifts, they use Google to browse for some unique items for their girls. They don't like to spend too much time on wrapping and boxing items, hence pre-packed sets are an ideal choice for them. As all other consumers they love special offers, and find candles a good side gift for their loved ones. They understand that support shown to local small companies is important to keep the community together. They gladly purchase products from small sellers and stores due to the great quality and dedicated personal service.
+Barbara and Andrew, 58 and 60, married couple. They're parents of two daughters in their late 20s. When looking for Christmas gifts, they use Google to browse for some unique items for their girls. They don't like to spend too much time on combining items, hence pre-selected bundle sets are an ideal choice for them. As all the other consumers they love special offers giving them a chance to save some money. They find candles a good gift idea for their loved ones, when in need to purchase something fast. They understand that support shown to local small companies is important to keep the community together. They gladly purchase products from small sellers and stores due to the great quality and dedicated personal service.
+
+Olivia, 17, high school student, vegan. Spends a lot of time in the social media. When going through her friend's stories on Instagram, a lot of adds are displayed promoting various products. Influencers she's following also post a videos with the product reviews and unboxing events. That's how she noticed Story Sparks Co. and their candles. As a student, Olivia has a small budget and looks for affordable items. She noticed that Story Sparks Co. offers bundles and tin candles, which don't cost much and can be reused after. As a person who cares about the environment and animal rights, she prefers the brands that support organizations like PETA. She considers herself as an conscious and mindful young consumer.
 
 ## Marketing Stategy
 A set of various marketing strategies was implemented for Story Sparks Co. SEO, Social Media Marketing with elements of Content Marketing, Email Marketing - all to ensure Story Sparks success in the Internet by creating visible and trusty online presence.
@@ -222,25 +224,25 @@ Color legend:
 * Blue - parent pages containing subpages
 * Grey - all other subpages and additional features (Search, Footer)
 * Green - subpages requiring User to be logged in
-* Purple - subpages accessable only for the Admins
+* Purple - subpages accessible only for the Admins
 
 <details><summary>View the User Journey Diagram</summary>
 <img src="https://story-sparks.s3.eu-west-1.amazonaws.com/media/user-journey.png">
 </details>
 
-Story Sparks Co. was developed usiutalizing Django. 
+Story Sparks Co. was developed utilizing Django. 
 As a result the page functionality was split into separate applications. For this project I created 7 apps for clear functionality split:
 * bag - functionality for basket view, where the user can verify product added to the bag
 * checkout - functionality for checkout procedure, where the user processes with the payment and adds the delivery details
 * contact - functionality for contact form and Shipping & Returns Q&A page
 * creators - functionality for About Us section listing all current Story Sparks members, as well as give the Admin an option to add, edit and delete them. 
-* home - functionality for main homepage - navbars, search bar, access to the basket and account options, as well as testimonials, social media, subscription field and Provacy Policy and Terms & Conditions.
+* home - functionality for main homepage - navbars, search bar, access to the basket and account options, as well as testimonials, social media, subscription field and Privacy Policy and Terms & Conditions.
 * products - functionality for the products to be listed and searched - based on the categories and scents.
 * profiles - functionality for the profile management - login in/out, registration, profile page with delivery details, order history and product management for the Admins.
 
 ## Skeleton
 The store website was designed to provide the User with an expected product - easy to navigate, with search bar on the top, clear navigation, easy to identify sections and helpful icons. 
-The header and footer on each page repeats, colors are consistent across the all subpages. Amount of information is not excesive - helping the Users to intuitively find what they're looking for. 
+The header and footer on each page repeats, colors are consistent across the all subpages. Amount of information is not excessive - helping the Users to intuitively find what they're looking for. 
 Wireframes for main pages for all screen sizes (desktop, tablet and mobile) were created in [Balsamiq](https://www.balsamiq.com/), as shown below.
 
 ### Wireframes
@@ -274,9 +276,9 @@ The colors used within all the pages are shown below and were inspired by some o
 </details>
 
 ### Typography
-I decided to stay mostly with default fonts that came with Bootstrap CSS styling. Two fonts I especially liked to continuously use within this project to provide satisfiying design:
+I decided to stay mostly with default fonts that came with Bootstrap CSS styling. Two fonts I especially liked to continuously use within this project to provide satisfying design:
 
-* Segoe UI - well known, easy to read, fits the page overal style. Used for the page name and login/ registration pages.
+* Segoe UI - well known, easy to read, fits the page overall style. Used for the page name and login/ registration pages.
 * Roboto - sans-serif font - clean and easy to read.
 
 ### Images
@@ -296,9 +298,9 @@ It was divided into three sections for clear tasks distribution and visual progr
 
 <details><summary>Kanban Board look for the project</summary><img src="https://story-sparks.s3.eu-west-1.amazonaws.com/media/kanban-board.png"></details>
 
-Based on the Iterative Development idea - while working on this project, I added new functional capabilities and modified existing features as needed over time. Different parts of the project were developed at various times and were integrated based on their successful completion. Increments were build based on their functionality need to not spend efforts on building features not neccessary for the project. Subsequent iterations were implemented based on the Users feedback and tests.
+Based on the Iterative Development idea - while working on this project, I added new functional capabilities and modified existing features as needed over time. Different parts of the project were developed at various times and were integrated based on their successful completion. Increments were build based on their functionality need to not spend efforts on building features not necessary for the project. Subsequent iterations were implemented based on the Users feedback and tests.
 
-MoSCoW prioritization was taken under consideration while creating this project - some of the User Stories were critical (like CRUD functionality, processing orders) compared to other User Stories rather considerable (contact form, Shipments & Returns Q&A, About Us). Those with smaller impact were left for the later phase of page development, while other - vital ones - were guaranteed to be delivered on time. Timeboxing and prioritization were crutial for this project and can be reflected by viewing Iteration process (Todo > In Progress > Done) and labels assigned to each User Story (Must Have, Could Have and Won't Have).
+MoSCoW prioritization was taken under consideration while creating this project - some of the User Stories were critical (like CRUD functionality, processing orders) compared to other User Stories rather considerable (contact form, Shipments & Returns Q&A, About Us). Those with smaller impact were left for the later phase of page development, while other - vital ones - were guaranteed to be delivered on time. Timeboxing and prioritization were crucial for this project and can be reflected by viewing Iteration process (Todo > In Progress > Done) and labels assigned to each User Story (Must Have, Could Have and Won't Have).
 
 ## Epics
 Story Sparks Co. project was broken into smaller Epics and were reflected in the creation process by starting new apps. Groups of User Stories were added to the Kanban Board based on those firstly established Epics. 
@@ -325,7 +327,7 @@ During the process of the page creation I was able to decide what needs to be im
 Header is a static element visible on every page. It contains:
 * Free delivery banner, to let the Users know that they can get free shipping if they place an order over €50.
 * Logo visible on large screens (desktop) on the top left. It's removed on smaller screens (tablet, mobile) to reduce the navbar size.
-* Search bar in the center on large screens (desktop). Reduced to a loop icon on smaller screens (tablet, mobile) due to space economy.
+* Search bar in the centre on large screens (desktop). Reduced to a loop icon on smaller screens (tablet, mobile) due to space economy.
 * My Account button with dropdown menu that provides links for "Register" and "Login", allowing users to either register for a new account, or login with an existing one. 
 Once logged in, the links update to "My Profile" and "Logout". If logged in as a superuser, there is also a "Product Management" link available here.
 * Cart button - transfers the User to Bag view page. 
@@ -361,8 +363,8 @@ Main page that allows the User to easily navigate through available options:
 
 Products page displays the list of all products added to the store:
 * Sort field - allows to sort the available products by name (A-Z and Z-A) and price (lowest/ highest first)
-* Information about the number of avilable products.
-* List of the products containing: image, colorful background, name, price.
+* Information about the number of available products.
+* List of the products containing: image, colourful background, name, price.
 * List can be filtered by Scent in the navbar on the top.
 * User can also perform a search on the products by name, description and ingredients.
 * When logged in as a superuser, additional buttons appear: "Edit" and "Delete". These give the superuser quick access to CRUD functionality.
@@ -447,8 +449,8 @@ Product Management page is available to superusers only.
 </details>
 
 Q&A page, where users can learn more about the Shipping and Returns procedures.
-* The page has a form of accordeon - to view the answer to the question regarding Shipping and Returns - User needs to click on the question, which will reveal the answer.
-* Important page, as it displays all the ionformation that customer might be looking for in case of receiving a faulty item or wanting to return the goods.
+* The page has a form of accordion - to view the answer to the question regarding Shipping and Returns - User needs to click on the question, which will reveal the answer.
+* Important page, as it displays all the information that customer might be looking for in case of receiving a faulty item or wanting to return the goods.
 
 <details> <summary> About Us </summary>
 <img src="https://story-sparks.s3.eu-west-1.amazonaws.com/media/aboutus.png">
@@ -457,14 +459,14 @@ Q&A page, where users can learn more about the Shipping and Returns procedures.
 About Us page displays the details about the Story Sparks creators - their photos, names, job title and additional information.
 * Each creator has a short description field explaining their role in Story Sparks Co. 
 * Page brings the User and creators closer - makes the purchase more personal, as the User knows who stands behind the brand.
-* When logged in as a superuser - additional buttons are availabe: "Add new creator", "Update creator" and "Delete creator".
+* When logged in as a superuser - additional buttons are available: "Add new creator", "Update creator" and "Delete creator".
 * "Add new creator" takes the superuser to a new page containing a form, which allows to add new members of Story Sparks Co. to the About Us page.
 
 <details> <summary> Contact Form </summary>
 <img src="https://story-sparks.s3.eu-west-1.amazonaws.com/media/contact-form.png">
 </details>
 
-Contact pagre allows the User to communicate with the Story Sparks Co. Team.
+Contact page allows the User to communicate with the Story Sparks Co. Team.
 * Page contains a form, where the user can choose the category: Submit a request or Ask a question and add their details.
 * Once the contact form is sent - the User receives a success message in the top right corner informing about successful submission.
 * In case of any error while sending the form - the user receives an error notification in the top right corner.
@@ -486,14 +488,14 @@ A set of various marketing strategies was implemented for Story Sparks Co. SEO, 
 ## Branding
 Consistent branding helps with dragging customer's attention and keeps the customers engagement on the high level, as they recognize the social media feed and can associate it with the store.
 Story Sparks Co. is aiming to keep it modern, funky and high quality to meet the needs of the Target Audience. 
-Storng branding helps to build the trust among customers, who are then more likely to make a purchase or recommed it to their close ones or opther people through the social media posts.
+Strong branding helps to build the trust among customers, who are then more likely to make a purchase or recommend it to their close ones or other people through the social media posts.
 
 ## SEO
 Customers will most likely find Story Sparks Co. when using Google or other search engine. SEO is very important element to ensure that the page is visible, when search engines are in use:
 * I made sure that the content of the page, product descriptions, About Us section, Shipping and Returns Q&A are full of valuable information based on the keywords.
-* I ensure that HTML elements boosting CEO are in place: useful alt descriptions for the img elements, meta keyowrds content in the head element, strong elements and headings.
-* I added robots.txt file to allow search engine spiderbots to crawl the site and allow it to be ranked in search results. 
-* I added sitemap.xml to help the spiderbots to crawl the site faster and fetch all relevant content. 
+* I ensure that HTML elements boosting CEO are in place: useful alt descriptions for the img elements, meta keywords content in the head element, strong elements and headings.
+* I added robots.txt file to allow search engine to crawl the site and allow it to be ranked in search results. 
+* I added sitemap.xml to help with crawling the site faster and fetch all relevant content. 
 * The site has testimonials on the homepage, Privacy Policy and Terms & Conditions pages to boost the customer's trust and improve search engine rankings.
 
 ## Keywords
@@ -512,7 +514,7 @@ I used the [Wordtracker](https://www.wordtracker.com/) to check how much competi
 * candles for her
 * funny gift candles
 * joke candles
-* fragnance oils candle
+* fragrance oils candle
 * natural candles
 * organic candles
 * best natural candles
@@ -525,7 +527,7 @@ Anyone visiting the store (no need to be logged in User) can sign up to the news
 Newsletter for Story Sparks Co. was created by using the [Mailchimp](https://mailchimp.com/). 
 
 ## Social media
-Social Media Marketing is a great way to become recognizable for the potential customers within the various social media platforms. It helps with tageting the selected audience, as different social media platforms are attractive to different age groups. Additionally it adds extra links for search engines, building the site's authenticity. 
+Social Media Marketing is a great way to become recognizable for the potential customers within the various social media platforms. It helps with targeting the selected audience, as different social media platforms are attractive to different age groups. Additionally it adds extra links for search engines, building the site's authenticity. 
 For this project I created a [Facebook page](https://www.facebook.com/storysparksco) that matches the store in its design.
 
 <details> <summary> Story Sparks Co. Facebook Page </summary>
@@ -846,7 +848,7 @@ AWS_S3_OBJECT_PARAMETERS = {
 
 
 # Acknowledgments 
-* Huge thank you to my Code Institute fellow students from cohort msletb-nov-2021 and our amazing faciliator Kasia Bogucka.
+* Huge thank you to my Code Institute fellow students from cohort msletb-nov-2021 and our amazing facilitator Kasia Bogucka.
 * Thank you to my mentor Chris Quinn for his precious suggestions and support during this year with Code Institute.
 * Thanks to my fiancé Dino for ongoing support and reassurance that stepping into the coding world was the best idea.
 * Last but not least thanks to Code Institute's Tutor Support and Student Care Teams for their help, when really needed.
