@@ -35,11 +35,11 @@
     * [Newsletter](#newsletter)
     * [Social media](#social-media)
 6. [Technologies Used](<#technologies-used>)
-7. [Content](<#content>)
+7. [Content and Credits](<#content-and-credits>)
 8. [Testing](<#testing>)
     * [Stripe Testing Guidance](#stripe-testing-guidance)
 9. [Deployment](<#deployment>)
-10. [Credits](<#credits>)
+10. [Acknowledgments](<#acknowledgments>)
 
 
 # Introduction
@@ -89,24 +89,32 @@ Strong brand equals more customers, involved digital community and steady income
 3. As a User I want the store to process my data securely.
 
 ### User Stories
+
 **Viewing and Navigation**
+
 1. As a Site User I can view a list of products so that I can easily select some to purchase.
 2. As a Site User I can view individual product details so that I can identify the name, price, description, ingredients and product image.
 3. As a Site User I can easily view the total of my purchases at any time so that I can avoid spending too much and have a good overview of the current total.
+
 **Registration and User Accounts**
+
 4. As a Site User I can easily register an account so that I can have a personal account and be able to view my profile information: saved address details and past order history.
 5. As a Site User I can easily log in an account so that I can access my personal account information.
 6. As a Site User I can easily log out of my account so that I can ensure no one else can see my personal account information and order history.
 7. As a Site User I can easily recover my password in case I forget it so that I can recover access to my account.
 8. As a Site User I can receive an email confirmation after registering so that I can verify that my account registration was successful.
 9. As a Site User I can have a personalized user profile so that I can view my personal order history and order confirmations, as well as save my payment information.
+
 **Sorting and Searching**
+
 10. As a Site User I can sort the list of available products so that I can easily identify the price of the products (ascending / descending) and view the products in the alphabetical order (ascending / descending).
 11. As a Site User I can sort a specific category of products so that I can find the products by price or name (ascending/ descending) for that specific category.
 12. As a Site User I can sort a specific product based on their scent so that I can view the price and product name (ascending/ descending) for that selected scent category.
 13. As a Site User I can search for the product by name, description or ingredients so that I can find a specific product that I'd like to purchase.
 14. As a Site User I can easily see what I've searched for and the number of results so that I can quickly decide whether the product I want is available.
+
 **Purchasing and Checkout**
+
 15. As a Site User I can easily select the quantity of a product when purchasing it so that I can ensure I don't accidentally select the wrong product or quantity.
 16. As a Site User I can view items in my bag to be purchased so that I can identify the total cost of my purchase and all items I will receive.
 17. As a Site User I can adjust the quantity of individual items in my bag so that I can easily make changes to my purchase before the checkout.
@@ -114,30 +122,41 @@ Strong brand equals more customers, involved digital community and steady income
 19. As a Site User I can ensure that my personal and payment information is safe and secure so that I can confidently provide the needed information to make a purchase.
 20. As a Site User I can view an order confirmation after the checkout so that I can verify that I haven't made any mistakes.
 21. As a Site User I can receive an email confirmation after checking out so that I can keep the confirmation on what I've purchased for my own records.
+
 **Store Official Data - GDPR**
+
 22. As a Site User I can view the terms & conditions so that I can understand better terms & conditions of using the store.
 23. As a Site User I can view the privacy policy settings so that I can understand better store's privacy policy and how they use my data.
+
 **Social Media and Marketing**
+
 24. As a Site User I can subscribe to a newsletter so that I can get all the latest offers and information regarding the store and products, as well as special deals.
 25. As a Site User I can see the store's social media accounts links so that I can easily access store's social media pages and profiles to view the information, posts etc.
 26. As a Site User I can view the logos and links for any external resources so that I can identify the organizations and movements the store works with to identify the store's mission and profile.
 27. As a Site User I can view the testimonials of other media accounts (magazines, radio, TV), who tested the Story Spark's products so that I can see what are their opinions about the company and its products.
 28. As a Site User I can quickly identify special offers so that I can take advantage of special savings on products I'd like to purchase.
+
 **Additional Information and Contact**
+
 29. As a Site User I can view the About Us section so that I can learn more about the Story Sparks Co. owners and employees.
 30. As a Site User I can view the shipment and returns Q&A section so that I can get more information about the shipping time, return options and international deliveries.
 31. As a Site User I can use the contact form so that I can communicate directly with the store to send them a query/ questions regarding the product/store.
 
 ### User (Owner) Stories
 **Product**
+
 1. As a Site Admin I can add a product so that I can add new items to my store.
 2. As a Site Admin I can edit/update a product so that I can change product price, image, description, name, ingredients.
 3. As a Site Admin I can delete a product so that I can remove items that are no longer available.
+
 **Creators**
+
 4. As a Site Admin I can add a new creator to About Us section so that I can add new people, who work for Story Sparks Co.
 5. As a Site Admin I can edit/update a creator to About Us section so that I can change the information and photos of people, who work for Story Sparks Co.
 6. As a Site Admin I can delete a creator from About Us section so that I can remove people, who no longer work for Story Sparks Co.
+
 **Newsletter**
+
 7. As a Site Admin I want to send newsletters to our mailing list so that I can share information about the new products and upcoming deals.
 
 Here's a table of the features based on the User Stories ordered by their importance and urgency to complete.
@@ -269,6 +288,7 @@ I decided to stay mostly with default fonts that came with Bootstrap CSS styling
 ## Kanban Board
 Story Sparks Co. e-commerce store project was based on the Agile Methodology. I used Agile Kanban Board Framework and implemented it in the site's creation process. 
 * It can be viewed [here](https://github.com/users/katzur/projects/6)
+
 It was divided into three sections for clear tasks distribution and visual progress:
 * Todo
 * In Progress
@@ -533,7 +553,7 @@ For this project I created a [Facebook page](https://www.facebook.com/storyspark
 * Stripe - supporting store's payments
 * TempMail - used for testing purposes
 
-# Content
+# Content and Credits
 * Code Institute's Boutique Ado walkthrough project - base for the project and its functionality.
 * Django Testing from Code Institute ['Hello Django' Walkthrough project](https://learn.codeinstitute.net/courses/course-v1:CodeInstitute+FST101+2021_T1/courseware/dc049b343a9b474f8d75822c5fda1582/5666926980b74689b37a0d5da3cec510/)
 * Color pallete creator and contrast checker were from on [Coolors](https://coolors.co/)
@@ -824,7 +844,7 @@ AWS_S3_OBJECT_PARAMETERS = {
 
 
 
-# Credits and Acknowledgments 
+# Acknowledgments 
 * Huge thank you to my Code Institute fellow students from cohort msletb-nov-2021 and our amazing faciliator Kasia Bogucka.
 * Thank you to my mentor Chris Quinn for his precious suggestions and support during this year with Code Institute.
 * Thanks to my fiancé Dino for ongoing support and reassurance that stepping into the coding world was the best idea.

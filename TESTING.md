@@ -248,7 +248,7 @@ All HTML pages were run through the [W3C HTML Validator](https://validator.w3.or
 | Password Reset                 | No Errors  |
 | 404.html                       | N/A        |
 | 500.html                       | N/A        |
-| About Us                       |            |
+| About Us                       | No Errors  |
 | Add Creator                    | N/A        |
 | Edit Creator                   | N/A        |
 | Confirm Delete Creator         | N/A        |
