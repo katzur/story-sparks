@@ -254,8 +254,25 @@ All HTML pages were run through the [W3C HTML Validator](https://validator.w3.or
 | Confirm Delete Creator         | N/A        |
 | Returns & Shipping             | No Errors  |
 
-Product Details - error related to additional </p> element.
-Based on the code for Product Details - no issues where seen in line 35.
+NOTE: Product Details - error related to additional  
+````
+</p> 
+````
+element.
+
+Based on the code for Product Details - no issues where seen in line 35. Please compare the validation with the actual code:
+
+<details><summary>Error displayed for the Product Details page within the Validator</summary>
+<img src="https://story-sparks.s3.eu-west-1.amazonaws.com/media/html-error1.png">
+</details>
+
+<details><summary>Checking within the source code, where the issue was found by the Validator.</summary>
+<img src="https://story-sparks.s3.eu-west-1.amazonaws.com/media/html-error2.png">
+</details>
+
+<details><summary>Comparing it with the actual code - issue pointed by the Validator not found.</summary>
+<img src="https://story-sparks.s3.eu-west-1.amazonaws.com/media/html-error3.png">
+</details>
 
 ## CSS
 No errors were found when passing CSS direct input through the [W3C CSS Validator](https://jigsaw.w3.org/css-validator/#validate_by_input)

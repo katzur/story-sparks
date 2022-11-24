@@ -478,6 +478,7 @@ Contact pagre allows the User to communicate with the Story Sparks Co. Team.
 * Add the rating for the products.
 * Add more product categories - like accessories, wax melts, tealight sets.
 * Add a blog.
+* Email to be sent to the customer once contact form is sent.
 
 # Marketing Strategy Implementation
 A set of various marketing strategies was implemented for Story Sparks Co. SEO, Social Media Marketing with elements of Content Marketing, Email Marketing - all to ensure Story Sparks success in the Internet by creating visible and trusty online presence. Strong brand equals more customers, involved digital community and steady income.
