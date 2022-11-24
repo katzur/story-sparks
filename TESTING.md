@@ -305,6 +305,7 @@ Imported but unused for empty test files, models and admin files were ignored as
 
 ## Lighthouse
 
+
 # Device Testing
 The store pages were viewed and tested on a variety of devices such as Desktop, Large Desktop, Laptop 13", iPhone 13mini, iPhoneX and iPad to ensure responsiveness on different screen sizes. 
 The page performed as expected. The responsive design was also checked using Chrome Developer Tools across multiple devices. Additionally it was tested thorugh [Am I Responsive?](https://ui.dev/amiresponsive) to provide a demo.

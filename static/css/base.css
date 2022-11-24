@@ -91,7 +91,7 @@ hr {
 }
 
 #mc_embed_signup .asterisk {
-	color: #000!important;
+	color: #000 !important;
 }
 
 /* -------------------------------- Shipping and returns card styling */
@@ -100,7 +100,8 @@ hr {
 	background-color: rgb(200 209 202);
 }
 
-.card .btn.focus, .btn:focus {
+.card .btn.focus,
+.btn:focus {
 	box-shadow: 0 0 0 0.2rem rgb(183 185 175);
 }
 
@@ -130,15 +131,15 @@ a.effect-shine:hover {
 
 .orderhist {
 	background: white;
-	border-radius: 0% 0% 0% 0% / 0% 0% 0% 0% ;
+	border-radius: 0% 0% 0% 0% / 0% 0% 0% 0%;
 	color: white;
-	box-shadow: 20px 20px rgba(0,0,0,.15);
+	box-shadow: 20px 20px rgba(0, 0, 0, .15);
 	transition: all .4s ease;
 }
 
 .orderhist:hover {
 	border-radius: 0% 0% 50% 50% / 0% 0% 5% 5%;
-	box-shadow: 10px 10px rgba(0,0,0,.25);
+	box-shadow: 10px 10px rgba(0, 0, 0, .25);
 }
 
 /* -------------------------------- Tiles on the homepae hover effect from https://www.joshwcomeau.com/animation/css-transitions/ */
@@ -308,6 +309,7 @@ div.stroke ul li a:hover:after {
 	-webkit-filter: grayscale(100%);
 	-webkit-transition: all 1s ease;
 }
+
 .greyscale:hover img {
 	filter: grayscale(0%);
 	filter: gray;
@@ -485,25 +487,37 @@ h2::after {
 
 /* -------------------------------- Mailchimp subscription form */
 #mc_embed_signup .helper_text {
-	background-color: transparent!important;
+	background-color: transparent !important;
 }
 
 #mc_embed_signup form {
-	margin: 0px!important;
+	margin: 0px !important;
 }
 
 #mc-embedded-subscribe {
-	margin: 0px!important;
+	margin: 0px !important;
 }
 
 #mc_embed_signup #mc-embedded-subscribe-form div.mce_inline_error {
-	background-color: transparent!important;
+	background-color: transparent !important;
 }
 
 #mc_embed_signup .foot {
-	grid-template-columns: max-content!important;
+	grid-template-columns: max-content !important;
 }
 
+/* -------------------------------- Underline magical for homepage hero text from https://codepen.io/Wking/pen/BdmpVx */
+
+.underline--magical {
+	background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+	background-repeat: no-repeat;
+	background-size: 100% 0.2em;
+	background-position: 0 88%;
+	transition: background-size 0.25s ease-in;
+	&:hover {
+		background-size: 100% 88%;
+	}
+}
 
 /* -------------------------------- Media Queries */
 
