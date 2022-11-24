@@ -304,6 +304,48 @@ Imported but unused for empty test files, models and admin files were ignored as
 
 
 ## Lighthouse
+Lighthouse validation was performed for all the pages to verify their performance. Based on the Lighthouse suggestions I fixed some of the issues regarding missing labels for the Search button element and issue with 'Background and foreground colours do not have a sufficient contrast ratio' for the Checkout page regarding the muted-text class not being readable enough on the beige backgroud.
+Scores are listed below for the pages:
+
+<details> <summary> About Us </summary>
+<img src="https://story-sparks.s3.eu-west-1.amazonaws.com/media/lighthouse-about-us.png">
+</details>
+
+<details> <summary> All Products </summary>
+<img src="https://story-sparks.s3.eu-west-1.amazonaws.com/media/lighthouse-all-products.png">
+</details>
+
+<details> <summary> Checkout </summary>
+<img src="https://story-sparks.s3.eu-west-1.amazonaws.com/media/lighthouse-checkout.png">
+</details>
+
+<details> <summary> Contact </summary>
+<img src="https://story-sparks.s3.eu-west-1.amazonaws.com/media/lighthouse-contact.png">
+</details>
+
+<details> <summary> Homepage </summary>
+<img src="https://story-sparks.s3.eu-west-1.amazonaws.com/media/lighthouse-homepage.png">
+</details>
+
+<details> <summary> My Profile </summary>
+<img src="https://story-sparks.s3.eu-west-1.amazonaws.com/media/lighthouse-my-profile.png">
+</details>
+
+<details> <summary> Product Details </summary>
+<img src="https://story-sparks.s3.eu-west-1.amazonaws.com/media/lighthouse-product-details.png">
+</details>
+
+<details> <summary> Product Management </summary>
+<img src="https://story-sparks.s3.eu-west-1.amazonaws.com/media/lighthouse-product-management.png">
+</details>
+
+<details> <summary> Shipping & Returns </summary>
+<img src="https://story-sparks.s3.eu-west-1.amazonaws.com/media/lighthouse-shipping.png">
+</details>
+
+<details> <summary> Shopping Bag </summary>
+<img src="https://story-sparks.s3.eu-west-1.amazonaws.com/media/lighthouse-shopping-bag.png">
+</details>
 
 
 # Device Testing
