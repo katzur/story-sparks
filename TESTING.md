@@ -30,7 +30,7 @@ As a Site User I can view individual product details so that I can identify the 
 <details><summary>As a Site User I can view individual product details so that I can identify the name, price, description, ingredients and product image.</summary>
 <img src="https://story-sparks.s3.eu-west-1.amazonaws.com/media/product-details.png">
 </details>
-Individual products are visible, when selecting a product from the all products list. All informations are included in the product detail view: name, price, description, ingredients and product image.
+Individual products are visible, when selecting a product from the all products list. All information is included in the product detail view: name, price, description, ingredients and product image.
 
 <details><summary>As a Site User I can easily view the total of my purchases at any time so that I can avoid spending too much and have a good overview of the current total.</summary>
 <img src="https://story-sparks.s3.eu-west-1.amazonaws.com/media/bag.png">
@@ -58,7 +58,7 @@ User, who is already logged in, has an option to logout once selected "My Accoun
 <img src="https://story-sparks.s3.eu-west-1.amazonaws.com/media/forgot-password.png">
 <img src="https://story-sparks.s3.eu-west-1.amazonaws.com/media/password-reset.png">
 </details>
-Whenever the User forgets the password, the page allows to recover access to the account by resetting the password option. Email with further intructions is sent to the User and a new password can be established.
+Whenever the User forgets the password, the page allows to recover access to the account by resetting the password option. Email with further instruction is sent to the User and a new password can be established.
 
 <details><summary>As a Site User I can receive an email confirmation after registering so that I can verify that my account registration was successful.</summary>
 <img src="https://story-sparks.s3.eu-west-1.amazonaws.com/media/verify-email.png">
@@ -70,7 +70,7 @@ Once the registration form is completed, the User is directed to a new page with
 <img src="https://story-sparks.s3.eu-west-1.amazonaws.com/media/my-profile.png">
 <img src="https://story-sparks.s3.eu-west-1.amazonaws.com/media/order-history.png">
 </details>
-When the User is logged in, they can view their delivery details and order history by accessing "MY Account" > "My Profile". They have the option to update their personal information. Once cliked on the order number - they can view the confirmation of the past orders with all the details as well.
+When the User is logged in, they can view their delivery details and order history by accessing "MY Account" > "My Profile". They have the option to update their personal information. Once clicked on the order number - they can view the confirmation of the past orders with all the details as well.
 
 <details><summary>As a Site User I can sort the list of available products so that I can easily identify the price of the products (ascending / descending) and view the products in the alphabetical order (ascending / descending).</summary>
 <img src="https://story-sparks.s3.eu-west-1.amazonaws.com/media/sort.png">
@@ -179,12 +179,12 @@ Users can access About Us page from the navbar on the top in the About & Contact
 <details><summary>As a Site User I can view the shipment and returns Q&A section so that I can get more information about the shipping time, return options and international deliveries.</summary>
 <img src="https://story-sparks.s3.eu-west-1.amazonaws.com/media/Q%26A.png">
 </details>
-Additional page was created to answer User's questions regarding shipments and returns. It was created in approachable accordeon style - User can click on the question and a new section appears underneath with the answer.
+Additional page was created to answer User's questions regarding shipments and returns. It was created in approachable accordion style - User can click on the question and a new section appears underneath with the answer.
 
 <details><summary>As a Site User I can use the contact form so that I can communicate directly with the store to send them a query/ questions regarding the product/store.</summary>
 <img src="https://story-sparks.s3.eu-west-1.amazonaws.com/media/contact-form.png">
 </details>
-Contact form was created for the Users to be able to send messages to the Story Spark's Team directly. Page can be accessed from the navar About & Contact, as well as from the footer section on every page (middle pane links). Customer can fill the details in the contact form, select a type of the query and click "Submit". Based on the outcome of the operation - a small message appears on the right side informing about the success/ failure of this operation.
+Contact form was created for the Users to be able to send messages to the Story Spark's Team directly. Page can be accessed from the navbar About & Contact, as well as from the footer section on every page (middle pane links). Customer can fill the details in the contact form, select a type of the query and click "Submit". Based on the outcome of the operation - a small message appears on the right side informing about the success/ failure of this operation.
 
 <details><summary>As a Site Admin I can add a product so that I can add new items to my store.</summary>
 <img src="https://story-sparks.s3.eu-west-1.amazonaws.com/media/product-management.png">
@@ -196,14 +196,14 @@ Superuser can add the product through the Product Management page. It can be acc
 <img src="https://story-sparks.s3.eu-west-1.amazonaws.com/media/products.png">
 <img src="https://story-sparks.s3.eu-west-1.amazonaws.com/media/edit-product.png">
 </details>
-A superuser can edit/ update products. Available icons to perform those operations are available within the all products view or product details page. Once clied on "Edit" a new page opens for the Product Management with information on the top that the superuser is editing the product. All product details will autopopulate based on the information saved in the database.
+A superuser can edit/ update products. Available icons to perform those operations are available within the all products view or product details page. Once clicked on "Edit" a new page opens for the Product Management with information on the top that the superuser is editing the product. All product details will autopopulate based on the information saved in the database.
 
 <details><summary>As a Site Admin I can delete a product so that I can remove items that are no longer available.</summary>
 <img src="https://story-sparks.s3.eu-west-1.amazonaws.com/media/product-details.png">
 <img src="https://story-sparks.s3.eu-west-1.amazonaws.com/media/products.png">
 <img src="https://story-sparks.s3.eu-west-1.amazonaws.com/media/edit-product.png">
 </details>
-A superuser can delete products. Available icons to perform those operations are available within the all products view or product details page. Once clied on "Delete" product is removed from the database.
+A superuser can delete products. Available icons to perform those operations are available within the all products view or product details page. Once clicked on "Delete" product is removed from the database.
 
 <details><summary>As a Site Admin I can add a new creator to About Us section so that I can add new people, who work for Story Sparks Co.</summary>
 <img src="https://story-sparks.s3.eu-west-1.amazonaws.com/media/aboutus.png">
@@ -215,12 +215,12 @@ Superusers can add new team members of Story Sparks Co. to About Us section. Onc
 <img src="https://story-sparks.s3.eu-west-1.amazonaws.com/media/aboutus.png">
 <img src="https://story-sparks.s3.eu-west-1.amazonaws.com/media/update-creator.png">
 </details>
-Superusers can edit/ update exisiting team members of Story Sparks Co. in About Us section. Once logged in as superuser in the About Us a new button appears "Update creator". Once clicked a new window appears, where the details are autopopulated based on the exisiting information in the database: name, job, description and image. Once new information is added, it can be saved by clicking "Update creator" - updated information will appear within the About Us, which can be accessible for the Users from the About & Contact section in the navbar.
+Superusers can edit/ update existing team members of Story Sparks Co. in About Us section. Once logged in as superuser in the About Us a new button appears "Update creator". Once clicked a new window appears, where the details are autopopulated based on the existing information in the database: name, job, description and image. Once new information is added, it can be saved by clicking "Update creator" - updated information will appear within the About Us, which can be accessible for the Users from the About & Contact section in the navbar.
 
 <details><summary>As a Site Admin I can delete a creator from About Us section so that I can remove people, who no longer work for Story Sparks Co.</summary>
 <img src="https://story-sparks.s3.eu-west-1.amazonaws.com/media/aboutus.png">
 </details>
-Superusers can delete exisiting team members of Story Sparks Co. in About Us section. Once logged in as superuser in the About Us a new button appears "Delete creator". Once clicked - the exisiting entry will be deleted and new updated version of About Us will be available for the users.
+Superusers can delete existing team members of Story Sparks Co. in About Us section. Once logged in as superuser in the About Us a new button appears "Delete creator". Once clicked - the existing entry will be deleted and new updated version of About Us will be available for the users.
 
 # Validator Testing
 ## HTML
@@ -260,7 +260,7 @@ NOTE: Product Details - error related to additional
 ````
 element.
 
-Based on the code for Product Details - no issues where seen in line 35. Please compare the validation with the actual code:
+Based on the code for Product Details - no issues were seen in line 35. Please compare the validation with the actual code:
 
 <details><summary>Error displayed for the Product Details page within the Validator</summary>
 <img src="https://story-sparks.s3.eu-west-1.amazonaws.com/media/html-error1.png">
@@ -311,7 +311,7 @@ All Javascript was passed through [JSHint](https://jshint.com/) with no issues.
 For the Python testing I used PEP8 and [flake8](https://pypi.org/project/flake8/) to check for any syntax errors.
 The errors found (please refer to the screenshot below) can be ignored, as they are automatically generated files (such as migrations).
 Formatting errors for settings.py were ignored to not disrupt the settings functionality for AUTH_PASSWORD_VALIDATORS. 
-Imported but unused for empty test files, models and admin files were ignored as well, as they don't disrupt the fuctionality and are irrelevant.
+Imported but unused for empty test files, models and admin files were ignored as well, as they don't disrupt the functionality and are irrelevant.
 <details> <summary> flake8 </summary>
 <img src="https://story-sparks.s3.eu-west-1.amazonaws.com/media/flake1.png">
 <img src="https://story-sparks.s3.eu-west-1.amazonaws.com/media/flake2.png">
@@ -321,7 +321,7 @@ Imported but unused for empty test files, models and admin files were ignored as
 
 
 ## Lighthouse
-Lighthouse validation was performed for all the pages to verify their performance. Based on the Lighthouse suggestions I fixed some of the issues regarding missing labels for the Search button element and issue with 'Background and foreground colours do not have a sufficient contrast ratio' for the Checkout page regarding the muted-text class not being readable enough on the beige backgroud.
+Lighthouse validation was performed for all the pages to verify their performance. Based on the Lighthouse suggestions I fixed some of the issues regarding missing labels for the Search button element and issue with 'Background and foreground colours do not have a sufficient contrast ratio' for the Checkout page regarding the muted-text class not being readable enough on the beige background.
 Scores are listed below for the pages:
 
 <details> <summary> About Us </summary>
@@ -367,7 +367,7 @@ Scores are listed below for the pages:
 
 # Device Testing
 The store pages were viewed and tested on a variety of devices such as Desktop, Large Desktop, Laptop 13", iPhone 13mini, iPhoneX and iPad to ensure responsiveness on different screen sizes. 
-The page performed as expected. The responsive design was also checked using Chrome Developer Tools across multiple devices. Additionally it was tested thorugh [Am I Responsive?](https://ui.dev/amiresponsive) to provide a demo.
+The page performed as expected. The responsive design was also checked using Chrome Developer Tools across multiple devices. Additionally it was tested through [Am I Responsive?](https://ui.dev/amiresponsive) to provide a demo.
 <details> <summary> Am I Responsive Demo </summary>
 <img src="https://story-sparks.s3.eu-west-1.amazonaws.com/media/amiresponsive.png">
 </details>
@@ -758,7 +758,7 @@ After changing DEBUG = False and deleting DEVELOPMENT config var from Heroku set
 
 After the initial migration to ElephantSQL two new apps were created: contact and creators. Whenever trying to send a contact form or access About Us section - error 500 was seen on the deployed site.
 Locally, while running the project using port 8000 all worked as expected.
-The issue behid it was that env.py file was missing on the project level, containing information:
+The issue behind it was that env.py file was missing on the project level, containing information:
 ````
 import os
 
@@ -785,7 +785,7 @@ When sending emails to the customers (with confirmation links, order details etc
 <img src="https://story-sparks.s3.eu-west-1.amazonaws.com/media/example-issue.png">
 </details>
 
-After further research it turned out that this information is based on the SITE_ID value declaired in settings.py. In the Django admin panel under the Sites section example.com was the only site decaired.
+After further research it turned out that this information is based on the SITE_ID value declaired in settings.py. In the Django admin panel under the Sites section example.com was the only site declared.
 There were two solutions to this issue:
 * edit example.com to any other domain name and display name
 * add a new site with different set of information regarding domain and display name. Then SITE_ID would need th be switched accordingly, e.g. SITE_ID = 2.
@@ -798,13 +798,13 @@ There were two solutions to this issue:
 
 **1. Carrousel with testimonials on the homepage changes its height when switching between the views**
 
-Problem is purely based on the size of the comments inside - there are 2 comments displayed on the same view - if one is vigger than the other on the next page - the hight will slightly drop/ increase while switching between the views.
+Problem is purely based on the size of the comments inside - there are 2 comments displayed on the same view - if one is bigger than the other on the next page - the hight will slightly drop/ increase while switching between the views.
 
 **2. Footer alignment on certain pages**
 
 Footer on certain pages tends to move up, leaving extra space on the bottom, even though code wise everything seems to be set up correctly.
 
-**3. When loggin in/ logging out the dropdowns are opening, but not able to click on the available links**
+**3. When login in/ logging out the dropdowns are opening, but not able to click on the available links**
 
 It requires a page refresh, then all works as expected. Not sure about the root cause of this issue as it appears to happen for the Heroku deployment only.
 
