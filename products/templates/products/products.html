@@ -1,6 +1,8 @@
 {% extends "base.html" %}
 {% load static %}
 
+{% block extra_title %}| All Products{% endblock %}
+
 {% block page_header %}
 <div class="container header-container">
     <div class="row">
@@ -14,12 +16,13 @@
 <div class="container-fluid">
     <div class="row">
         <div class="col text-center mt-3">
-            <h2 class="logo-font" style="text-transform: revert; font-size: xx-large;">All Products</h2>
-            {% for c in current_categories %}
-            <a class="category-badge text-decoration-none" href="{% url 'products' %}?category={{ c.name }}">
-                <span class="p-2 mt-2 badge badge-white text-black rounded-0 border border-dark">{{ c.name }}</span>
-            </a>
-            {% endfor %}
+            {% if current_categories %}
+                {% for c in current_categories %}
+                <h1 class="text-center pt-4">Candle {{ c.name }}</h1>
+                {% endfor %}
+            {% else %}
+                <h1 class="text-center pt-4">All Candles</h1>
+            {% endif %}
             <hr class="w-50 mb-1">
         </div>
     </div>
