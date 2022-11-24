@@ -3,6 +3,9 @@ from .models import UserProfile
 
 
 class UserProfileForm(forms.ModelForm):
+    """
+    Class for user model form
+    """
     class Meta:
         model = UserProfile
         exclude = ('user',)

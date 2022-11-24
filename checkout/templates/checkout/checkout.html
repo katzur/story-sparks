@@ -28,6 +28,7 @@
         </div>
 
         <div class="row">
+            <!-- Checkout summary for the products -->
             <div class="col-12 col-lg-6 order-lg-last mb-5">
                 <p class="font-weight-bold">Order Summary ({{ product_count }})</p>
                 <div class="row" style="border-bottom: ridge;border-color: #f4ceb5; background: #f4ceb5;">
@@ -38,6 +39,7 @@
                         <p class="mb-1 mt-0">Subtotal</p>
                     </div>
                 </div>
+                <!-- Information for each product in the summary -->
                 {% for item in bag_items %}
                     <div class="row">
                         <div class="col-2 mb-1">
@@ -59,6 +61,7 @@
                     </div>
                 {% endfor %}
                 <hr class="my-0">
+                <!-- Order subtotal, shopping and grand total -->
                 <div class="row text-black text-right mt-5">
                     <div class="col-7 offset-2">
                         <p class="my-0">Order Total:</p>
@@ -72,6 +75,7 @@
                     </div>
                 </div>
             </div>
+            <!-- Checkout form -->
             <div class="col-12 col-lg-6">
                 <p class="font-weight-bold">Please fill out the form below to complete your order</p>
                 <form action="{% url 'checkout' %}" method="POST" id="payment-form">

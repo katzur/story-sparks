@@ -25,6 +25,7 @@
 
     <div class="row">
         <div class="col" style="margin-top: 3em;">
+            <!-- If there are products in the bag, display those attributes -->
             {% if bag_items %}
             <div class="d-block d-md-none">
                 <div class="row">
@@ -38,6 +39,7 @@
                         <p class="text-muted mb-5">A summary of your bag contents is below</p>
                     </div>
                 </div>
+                <!-- For each product in the bag display -->
                 {% for item in bag_items %}
                 <div class="row">
                     <div class="col-12 col-sm-6 mb-2">
@@ -66,6 +68,7 @@
                     </a>
                 </div>
             </div>
+            <!-- Summary table -->
             <div class="table-responsive rounded d-none d-md-block text-center">
                 <table class="table table-sm table-borderless">
                     <thead class="text-black" style="background: #f4ceb5;
@@ -110,6 +113,7 @@
                     </tr>
                 </table>
             </div>
+            <!-- If there are no products in the bag, display a button to return to the Products page -->
             {% else %}
             <p class="lead mb-5">Your bag is empty.</p>
             <a href="{% url 'products' %}" class="btn btn-outline-black rounded-0 btn-lg">

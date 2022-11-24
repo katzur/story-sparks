@@ -18,6 +18,7 @@
 {% block content %}
     <div class="overlay"></div>
     <div class="container mb-5">
+        <!-- Page header -->
         <div class="row">
             <div class="col">
                 <hr>
@@ -31,6 +32,7 @@
             <div class="col-12 col-lg-7">
                 <div class="order-confirmation-wrapper p-2 border">
                     <div class="row">
+                        <!-- Order details -->
                         <div class="col">
                             <small class="text-muted">Order Info:</small>
                         </div>
@@ -74,6 +76,7 @@
                     {% endfor %}
 
                     <div class="row">
+                        <!-- Customer details -->
                         <div class="col">
                             <small class="text-muted">Delivering To:</small>
                         </div>
@@ -164,6 +167,7 @@
                     </div>
 
                     <div class="row">
+                        <!-- Order subtotal, shopping and grand total -->
                         <div class="col-12 col-md-4">
                             <p class="mb-0 text-black font-weight-bold">Order Total</p>
                         </div>
@@ -193,6 +197,7 @@
             </div>
         </div>
         <div class="row">
+            <!-- If viewing order from the Profile page, this is order hsitory -->
 			<div class="col-12 col-lg-7 text-right">
                 {% if from_profile %}
                     <a href="{% url 'profile' %}" class="btn btn-black rounded-0 my-2">
